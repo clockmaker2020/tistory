@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c532f4cc32fd8e30c2a63de8ec68dbd3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c532f4cc32fd8e30c2a63de8ec68dbd3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c532f4cc32fd8e30c2a63de8ec68dbd3 = L.map(
+                "map_c532f4cc32fd8e30c2a63de8ec68dbd3",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_472a315c8019adb0245122cfc0df0590 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_472a315c8019adb0245122cfc0df0590.addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var marker_1a0b6eaa04ef6d71b451355b33974c9d = L.marker(
+                [48.9244, 2.3601],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_392871ad41c5b7222c752bd17405e11e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a0b6eaa04ef6d71b451355b33974c9d.setIcon(icon_392871ad41c5b7222c752bd17405e11e);
+        
+    
+        var popup_c29237ca99a2fce184f99c511a04cf77 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_f847744074e7cd5be5472b9177ed133a = $(`<div id="html_f847744074e7cd5be5472b9177ed133a" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">스타드 드 프랑스 (육상)</div></div>`)[0];
+                popup_c29237ca99a2fce184f99c511a04cf77.setContent(html_f847744074e7cd5be5472b9177ed133a);
+            
+        
+
+        marker_1a0b6eaa04ef6d71b451355b33974c9d.bindPopup(popup_c29237ca99a2fce184f99c511a04cf77)
+        ;
+
+        
+    
+    
+            marker_1a0b6eaa04ef6d71b451355b33974c9d.bindTooltip(
+                `<div>
+                     스타드 드 프랑스 (육상)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be1514f98c866258700edbb0885be09a = L.marker(
+                [48.8392, 2.3542],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_132f7ef5967e1afce3f93a0a98ed5991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be1514f98c866258700edbb0885be09a.setIcon(icon_132f7ef5967e1afce3f93a0a98ed5991);
+        
+    
+        var popup_9331e8c23544c4f627c6668824d5b45a = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_a9bfba0b45bfd1d1db830c9fbf2b41da = $(`<div id="html_a9bfba0b45bfd1d1db830c9fbf2b41da" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">파리 아쿠아틱 센터 (수영)</div></div>`)[0];
+                popup_9331e8c23544c4f627c6668824d5b45a.setContent(html_a9bfba0b45bfd1d1db830c9fbf2b41da);
+            
+        
+
+        marker_be1514f98c866258700edbb0885be09a.bindPopup(popup_9331e8c23544c4f627c6668824d5b45a)
+        ;
+
+        
+    
+    
+            marker_be1514f98c866258700edbb0885be09a.bindTooltip(
+                `<div>
+                     파리 아쿠아틱 센터 (수영)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1e8e3a422bb907ed3b9984b6b91a04e = L.marker(
+                [48.8322, 2.2887],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_6da2d7c9ca4d41925694304787761905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1e8e3a422bb907ed3b9984b6b91a04e.setIcon(icon_6da2d7c9ca4d41925694304787761905);
+        
+    
+        var popup_b07f5104d52c613ea988e9205188f215 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_af4d7496e123be637180fbb995c7bc8b = $(`<div id="html_af4d7496e123be637180fbb995c7bc8b" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">파리 엑스포 포르트 드 베르사유 (체조, 농구)</div></div>`)[0];
+                popup_b07f5104d52c613ea988e9205188f215.setContent(html_af4d7496e123be637180fbb995c7bc8b);
+            
+        
+
+        marker_f1e8e3a422bb907ed3b9984b6b91a04e.bindPopup(popup_b07f5104d52c613ea988e9205188f215)
+        ;
+
+        
+    
+    
+            marker_f1e8e3a422bb907ed3b9984b6b91a04e.bindTooltip(
+                `<div>
+                     파리 엑스포 포르트 드 베르사유 (체조, 농구)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_264b5081b35be64394ae80774786c6bd = L.marker(
+                [48.847, 2.2497],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_567fc5172fe9ec3b1617188913edb92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_264b5081b35be64394ae80774786c6bd.setIcon(icon_567fc5172fe9ec3b1617188913edb92c);
+        
+    
+        var popup_eccd8b89e7998f656e190e3f1a85e0da = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_c8317512ac212a7eddfb1023d411fed4 = $(`<div id="html_c8317512ac212a7eddfb1023d411fed4" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">롤랑 가로스 (테니스, 권투)</div></div>`)[0];
+                popup_eccd8b89e7998f656e190e3f1a85e0da.setContent(html_c8317512ac212a7eddfb1023d411fed4);
+            
+        
+
+        marker_264b5081b35be64394ae80774786c6bd.bindPopup(popup_eccd8b89e7998f656e190e3f1a85e0da)
+        ;
+
+        
+    
+    
+            marker_264b5081b35be64394ae80774786c6bd.bindTooltip(
+                `<div>
+                     롤랑 가로스 (테니스, 권투)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bfa32197defac62bacc4221290fbed3 = L.marker(
+                [48.857, 2.312],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_a9137b562effcc30107caf765ccaef8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bfa32197defac62bacc4221290fbed3.setIcon(icon_a9137b562effcc30107caf765ccaef8c);
+        
+    
+        var popup_661b0edf5e3af462d59d9906f7bdd7fa = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_5c3a7131f140e8dc3557a423fa6923b3 = $(`<div id="html_5c3a7131f140e8dc3557a423fa6923b3" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">앵발리드 (양궁)</div></div>`)[0];
+                popup_661b0edf5e3af462d59d9906f7bdd7fa.setContent(html_5c3a7131f140e8dc3557a423fa6923b3);
+            
+        
+
+        marker_9bfa32197defac62bacc4221290fbed3.bindPopup(popup_661b0edf5e3af462d59d9906f7bdd7fa)
+        ;
+
+        
+    
+    
+            marker_9bfa32197defac62bacc4221290fbed3.bindTooltip(
+                `<div>
+                     앵발리드 (양궁)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19acdb160f59ac527e37d9f0aaced204 = L.marker(
+                [48.8556, 2.2983],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_064d4f2e858267425e43f27822698f30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19acdb160f59ac527e37d9f0aaced204.setIcon(icon_064d4f2e858267425e43f27822698f30);
+        
+    
+        var popup_bde93cf5a574f592c5a211867c489a37 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_cbbc3e8cc89b19a89178e1c1a844fa15 = $(`<div id="html_cbbc3e8cc89b19a89178e1c1a844fa15" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">샹 드 마르스 (배구)</div></div>`)[0];
+                popup_bde93cf5a574f592c5a211867c489a37.setContent(html_cbbc3e8cc89b19a89178e1c1a844fa15);
+            
+        
+
+        marker_19acdb160f59ac527e37d9f0aaced204.bindPopup(popup_bde93cf5a574f592c5a211867c489a37)
+        ;
+
+        
+    
+    
+            marker_19acdb160f59ac527e37d9f0aaced204.bindTooltip(
+                `<div>
+                     샹 드 마르스 (배구)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc4915f4dcdfaebff58782b97b7814ae = L.marker(
+                [48.8661, 2.3125],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_5c7d14523597164cbac726a599cebeca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc4915f4dcdfaebff58782b97b7814ae.setIcon(icon_5c7d14523597164cbac726a599cebeca);
+        
+    
+        var popup_d9de3d515b0606285fd76d113c45a821 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_413c8d1026f7930041bc962152725082 = $(`<div id="html_413c8d1026f7930041bc962152725082" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">그랑 팔레 (펜싱, 태권도)</div></div>`)[0];
+                popup_d9de3d515b0606285fd76d113c45a821.setContent(html_413c8d1026f7930041bc962152725082);
+            
+        
+
+        marker_bc4915f4dcdfaebff58782b97b7814ae.bindPopup(popup_d9de3d515b0606285fd76d113c45a821)
+        ;
+
+        
+    
+    
+            marker_bc4915f4dcdfaebff58782b97b7814ae.bindTooltip(
+                `<div>
+                     그랑 팔레 (펜싱, 태권도)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee28801a2632ce0d16f8dadf2633347e = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_1c458cf6216cccb188f06391f444c5f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee28801a2632ce0d16f8dadf2633347e.setIcon(icon_1c458cf6216cccb188f06391f444c5f2);
+        
+    
+        var popup_a7f7a0e2dbd1aa4947b7c9bcc2c849a4 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_89578aafe34a0d0c42488fc194e1b224 = $(`<div id="html_89578aafe34a0d0c42488fc194e1b224" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">세느강 (개막식, 마라톤 수영, 트라이애슬론)</div></div>`)[0];
+                popup_a7f7a0e2dbd1aa4947b7c9bcc2c849a4.setContent(html_89578aafe34a0d0c42488fc194e1b224);
+            
+        
+
+        marker_ee28801a2632ce0d16f8dadf2633347e.bindPopup(popup_a7f7a0e2dbd1aa4947b7c9bcc2c849a4)
+        ;
+
+        
+    
+    
+            marker_ee28801a2632ce0d16f8dadf2633347e.bindTooltip(
+                `<div>
+                     세느강 (개막식, 마라톤 수영, 트라이애슬론)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74efbb496b297019636c92a5b3039fdb = L.marker(
+                [48.9362, 2.3574],
+                {}
+            ).addTo(map_c532f4cc32fd8e30c2a63de8ec68dbd3);
+        
+    
+            var icon_e73de65c533469fccd720d5912307066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74efbb496b297019636c92a5b3039fdb.setIcon(icon_e73de65c533469fccd720d5912307066);
+        
+    
+        var popup_cab9c33f7320cc2bf0729856df21463f = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_6bd07543312f38045aaab421d495d394 = $(`<div id="html_6bd07543312f38045aaab421d495d394" style="width: 100.0%; height: 100.0%;"><div style="color: red; font-weight: bold; font-size: 20px; white-space: nowrap;">생드니 (폐막식)</div></div>`)[0];
+                popup_cab9c33f7320cc2bf0729856df21463f.setContent(html_6bd07543312f38045aaab421d495d394);
+            
+        
+
+        marker_74efbb496b297019636c92a5b3039fdb.bindPopup(popup_cab9c33f7320cc2bf0729856df21463f)
+        ;
+
+        
+    
+    
+            marker_74efbb496b297019636c92a5b3039fdb.bindTooltip(
+                `<div>
+                     생드니 (폐막식)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
