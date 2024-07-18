@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2397392266bf5c74502d4cac10612888 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2397392266bf5c74502d4cac10612888" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2397392266bf5c74502d4cac10612888 = L.map(
+                "map_2397392266bf5c74502d4cac10612888",
+                {
+                    center: [49.8175, 15.473],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9871916d0d691bc624931e5a958e3470 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Map data \u00a9 OpenStreetMap contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9871916d0d691bc624931e5a958e3470.addTo(map_2397392266bf5c74502d4cac10612888);
+        
+    
+            var marker_708db4626a78be2ca4c6638138c1ca6d = L.marker(
+                [49.0842, 16.1469],
+                {}
+            ).addTo(map_2397392266bf5c74502d4cac10612888);
+        
+    
+            var icon_7055199368b85e90b3ad1cf76e711b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_708db4626a78be2ca4c6638138c1ca6d.setIcon(icon_7055199368b85e90b3ad1cf76e711b79);
+        
+    
+        var popup_b0b9e7231a3915f57b25665bad8a45fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd7361a5b9131d3f364d1263504aafaf = $(`<div id="html_bd7361a5b9131d3f364d1263504aafaf" style="width: 100.0%; height: 100.0%;"><b style="font-size:20px;">두코바니 원자력발전소</b></div>`)[0];
+                popup_b0b9e7231a3915f57b25665bad8a45fe.setContent(html_bd7361a5b9131d3f364d1263504aafaf);
+            
+        
+
+        marker_708db4626a78be2ca4c6638138c1ca6d.bindPopup(popup_b0b9e7231a3915f57b25665bad8a45fe)
+        ;
+
+        
+    
+    
+            var marker_e995b1f40a47fa80a6da6a0e4e25a826 = L.marker(
+                [49.205, 14.3753],
+                {}
+            ).addTo(map_2397392266bf5c74502d4cac10612888);
+        
+    
+            var icon_d53db614fa6f247b349682aaf184a426 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e995b1f40a47fa80a6da6a0e4e25a826.setIcon(icon_d53db614fa6f247b349682aaf184a426);
+        
+    
+        var popup_db23f4d20de82b3921f333a6bfb704a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_31dff51d4d8a01c29c2a720813d77d6c = $(`<div id="html_31dff51d4d8a01c29c2a720813d77d6c" style="width: 100.0%; height: 100.0%;"><b style="font-size:20px;">테멜린 원자력발전소</b></div>`)[0];
+                popup_db23f4d20de82b3921f333a6bfb704a2.setContent(html_31dff51d4d8a01c29c2a720813d77d6c);
+            
+        
+
+        marker_e995b1f40a47fa80a6da6a0e4e25a826.bindPopup(popup_db23f4d20de82b3921f333a6bfb704a2)
+        ;
+
+        
+    
+    
+            var marker_9feb91867fea77fc89077c70a9c4b9e4 = L.marker(
+                [49.0842, 16.1469],
+                {}
+            ).addTo(map_2397392266bf5c74502d4cac10612888);
+        
+    
+            var icon_1794210d69a8ca7b5615cd13db030a50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9feb91867fea77fc89077c70a9c4b9e4.setIcon(icon_1794210d69a8ca7b5615cd13db030a50);
+        
+    
+        var popup_f0324894381f23326286c376c2cae21c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_963efe38b3136e4edd001593733b6f95 = $(`<div id="html_963efe38b3136e4edd001593733b6f95" style="width: 100.0%; height: 100.0%;"><b style="font-size:20px;">기존+신규 두코바니 원자력발전소</b></div>`)[0];
+                popup_f0324894381f23326286c376c2cae21c.setContent(html_963efe38b3136e4edd001593733b6f95);
+            
+        
+
+        marker_9feb91867fea77fc89077c70a9c4b9e4.bindPopup(popup_f0324894381f23326286c376c2cae21c)
+        ;
+
+        
+    
+</script>
+</html>
