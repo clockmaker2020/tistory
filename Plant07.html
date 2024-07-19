@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1366c69300e9d0ce9d90d5d5aa4c0a2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1366c69300e9d0ce9d90d5d5aa4c0a2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1366c69300e9d0ce9d90d5d5aa4c0a2 = L.map(
+                "map_f1366c69300e9d0ce9d90d5d5aa4c0a2",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95be19195a88bbb7d1bfea07bd2e1e61 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_95be19195a88bbb7d1bfea07bd2e1e61.addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var marker_3cea8f368f0e72ec4ede61d07936e1d9 = L.marker(
+                [31.0, 28.45],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_f1ab1674ae772003b521db63c192d3fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cea8f368f0e72ec4ede61d07936e1d9.setIcon(icon_f1ab1674ae772003b521db63c192d3fa);
+        
+    
+        var popup_f0039b001eb639b288b0609991ca9cb9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08460f244f796e2e55ac62aadd4b085a = $(`<div id="html_08460f244f796e2e55ac62aadd4b085a" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 이집트<br>         <b>발전소 명칭:</b> El Dabaa<br>         <b>주도업체:</b> <a href="https://www.rosatom.ru/en/" target="_blank">https://www.rosatom.ru/en/</a>     </div>     </div>`)[0];
+                popup_f0039b001eb639b288b0609991ca9cb9.setContent(html_08460f244f796e2e55ac62aadd4b085a);
+            
+        
+
+        marker_3cea8f368f0e72ec4ede61d07936e1d9.bindPopup(popup_f0039b001eb639b288b0609991ca9cb9)
+        ;
+
+        
+    
+    
+            var marker_b9592000217b3a444882dad35a4674d6 = L.marker(
+                [51.205, -3.136],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_ad82dd192c49e609362d1b9686d0b4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9592000217b3a444882dad35a4674d6.setIcon(icon_ad82dd192c49e609362d1b9686d0b4a3);
+        
+    
+        var popup_8ff4ff34feba9a38c05b3b4089b3069e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3eddbab776afef061a5c1461b2d54a3 = $(`<div id="html_e3eddbab776afef061a5c1461b2d54a3" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 영국<br>         <b>발전소 명칭:</b> Hinkley Point C<br>         <b>주도업체:</b> <a href="https://www.edf.fr/en/the-edf-group" target="_blank">https://www.edf.fr/en/the-edf-group</a>     </div>     </div>`)[0];
+                popup_8ff4ff34feba9a38c05b3b4089b3069e.setContent(html_e3eddbab776afef061a5c1461b2d54a3);
+            
+        
+
+        marker_b9592000217b3a444882dad35a4674d6.bindPopup(popup_8ff4ff34feba9a38c05b3b4089b3069e)
+        ;
+
+        
+    
+    
+            var marker_ad5edb920aa63fe669059cf7cbb4689c = L.marker(
+                [52.213, 1.623],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_64a69910bbd33eda90115a138532a8d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad5edb920aa63fe669059cf7cbb4689c.setIcon(icon_64a69910bbd33eda90115a138532a8d8);
+        
+    
+        var popup_976dbc4a570ad0626cd42428088362ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a704ac426a72dacd716b016cd26b3ed0 = $(`<div id="html_a704ac426a72dacd716b016cd26b3ed0" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 영국<br>         <b>발전소 명칭:</b> Sizewell C<br>         <b>주도업체:</b> <a href="https://www.edf.fr/en/the-edf-group" target="_blank">https://www.edf.fr/en/the-edf-group</a>     </div>     </div>`)[0];
+                popup_976dbc4a570ad0626cd42428088362ca.setContent(html_a704ac426a72dacd716b016cd26b3ed0);
+            
+        
+
+        marker_ad5edb920aa63fe669059cf7cbb4689c.bindPopup(popup_976dbc4a570ad0626cd42428088362ca)
+        ;
+
+        
+    
+    
+            var marker_3f194162576860882b79272c6f99ceba = L.marker(
+                [33.13, -81.747],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_31f8dd904a2f7a3c860566acc3197c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f194162576860882b79272c6f99ceba.setIcon(icon_31f8dd904a2f7a3c860566acc3197c9c);
+        
+    
+        var popup_d138efa21f1e54e8475dd14cd51b02b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a862f7684e33589d8b9c1144f32ab892 = $(`<div id="html_a862f7684e33589d8b9c1144f32ab892" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 미국<br>         <b>발전소 명칭:</b> Vogtle<br>         <b>주도업체:</b> <a href="https://www.westinghousenuclear.com/" target="_blank">https://www.westinghousenuclear.com/</a>     </div>     </div>`)[0];
+                popup_d138efa21f1e54e8475dd14cd51b02b3.setContent(html_a862f7684e33589d8b9c1144f32ab892);
+            
+        
+
+        marker_3f194162576860882b79272c6f99ceba.bindPopup(popup_d138efa21f1e54e8475dd14cd51b02b3)
+        ;
+
+        
+    
+    
+            var marker_a150da62959eadea02f14d5c04ef9468 = L.marker(
+                [49.2167, 16.6167],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_4b01c9063e93319e855b31f71e11ad91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a150da62959eadea02f14d5c04ef9468.setIcon(icon_4b01c9063e93319e855b31f71e11ad91);
+        
+    
+        var popup_c686a040fc4b7c43f359cc3fc7c1f7d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_227ee68bbfd7b5300552f1c4e9f20834 = $(`<div id="html_227ee68bbfd7b5300552f1c4e9f20834" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 체코<br>         <b>발전소 명칭:</b> Dukovany<br>         <b>주도업체:</b> <a href="https://www.khnp.co.kr/eng/main.do" target="_blank">https://www.khnp.co.kr/eng/main.do</a>     </div>     </div>`)[0];
+                popup_c686a040fc4b7c43f359cc3fc7c1f7d5.setContent(html_227ee68bbfd7b5300552f1c4e9f20834);
+            
+        
+
+        marker_a150da62959eadea02f14d5c04ef9468.bindPopup(popup_c686a040fc4b7c43f359cc3fc7c1f7d5)
+        ;
+
+        
+    
+    
+            var marker_f5b9d9527701afd5c0dc0612f7260f16 = L.marker(
+                [36.1444, 33.2878],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_74c35782a0bb24d45215b1c2ba27fd06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5b9d9527701afd5c0dc0612f7260f16.setIcon(icon_74c35782a0bb24d45215b1c2ba27fd06);
+        
+    
+        var popup_d97728ad4b7582220cc212fa5ff8c5ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_266c610a0a620988733ff511a70255ca = $(`<div id="html_266c610a0a620988733ff511a70255ca" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 터키<br>         <b>발전소 명칭:</b> Akkuyu<br>         <b>주도업체:</b> <a href="https://www.rosatom.ru/en/" target="_blank">https://www.rosatom.ru/en/</a>     </div>     </div>`)[0];
+                popup_d97728ad4b7582220cc212fa5ff8c5ee.setContent(html_266c610a0a620988733ff511a70255ca);
+            
+        
+
+        marker_f5b9d9527701afd5c0dc0612f7260f16.bindPopup(popup_d97728ad4b7582220cc212fa5ff8c5ee)
+        ;
+
+        
+    
+    
+            var marker_6e9229ddb86756f83e7376e456cdf70a = L.marker(
+                [61.24, 21.45],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_76d09b4c5a8271419a97961684f5d4b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e9229ddb86756f83e7376e456cdf70a.setIcon(icon_76d09b4c5a8271419a97961684f5d4b0);
+        
+    
+        var popup_7b5e43636c7ed7f73ab657c47ebc9ecb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3ed44817b804796d5db5b6ef89d555b = $(`<div id="html_b3ed44817b804796d5db5b6ef89d555b" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 핀란드<br>         <b>발전소 명칭:</b> Olkiluoto 3<br>         <b>주도업체:</b> <a href="https://www.framatome.com/" target="_blank">https://www.framatome.com/</a>     </div>     </div>`)[0];
+                popup_7b5e43636c7ed7f73ab657c47ebc9ecb.setContent(html_b3ed44817b804796d5db5b6ef89d555b);
+            
+        
+
+        marker_6e9229ddb86756f83e7376e456cdf70a.bindPopup(popup_7b5e43636c7ed7f73ab657c47ebc9ecb)
+        ;
+
+        
+    
+    
+            var marker_eeda4d8d46bad7998da6336cbd170681 = L.marker(
+                [24.5634, 54.416],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_34a33b9304e9ded3253c3e87d6f613a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eeda4d8d46bad7998da6336cbd170681.setIcon(icon_34a33b9304e9ded3253c3e87d6f613a4);
+        
+    
+        var popup_0c352209ffb3fd91d0b71da1d877f744 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_066f0bda64e61dc1032b85dccf7005de = $(`<div id="html_066f0bda64e61dc1032b85dccf7005de" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 아랍에미리트<br>         <b>발전소 명칭:</b> Barakah<br>         <b>주도업체:</b> <a href="https://home.kepco.co.kr/kepco/main.do" target="_blank">https://home.kepco.co.kr/kepco/main.do</a>     </div>     </div>`)[0];
+                popup_0c352209ffb3fd91d0b71da1d877f744.setContent(html_066f0bda64e61dc1032b85dccf7005de);
+            
+        
+
+        marker_eeda4d8d46bad7998da6336cbd170681.bindPopup(popup_0c352209ffb3fd91d0b71da1d877f744)
+        ;
+
+        
+    
+    
+            var marker_f63f39e68098eab62196a08664df2e61 = L.marker(
+                [42.76, -107.54],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_37a265fabe68fed614de56005684ab81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f63f39e68098eab62196a08664df2e61.setIcon(icon_37a265fabe68fed614de56005684ab81);
+        
+    
+        var popup_a005e5d1c40345c94541b26cb3d794c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ce26e672a862c307a6013ca820f2dfe = $(`<div id="html_5ce26e672a862c307a6013ca820f2dfe" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 미국<br>         <b>발전소 명칭:</b> Natrium<br>         <b>주도업체:</b> <a href="https://www.terrapower.com/" target="_blank">https://www.terrapower.com/</a>     </div>     </div>`)[0];
+                popup_a005e5d1c40345c94541b26cb3d794c3.setContent(html_5ce26e672a862c307a6013ca820f2dfe);
+            
+        
+
+        marker_f63f39e68098eab62196a08664df2e61.bindPopup(popup_a005e5d1c40345c94541b26cb3d794c3)
+        ;
+
+        
+    
+    
+            var marker_c029b637472c4dbcbf094160526ffc7e = L.marker(
+                [59.8, 17.9],
+                {}
+            ).addTo(map_f1366c69300e9d0ce9d90d5d5aa4c0a2);
+        
+    
+            var icon_f080c08166fbcf9639e3ab4741085cc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c029b637472c4dbcbf094160526ffc7e.setIcon(icon_f080c08166fbcf9639e3ab4741085cc2);
+        
+    
+        var popup_581bf4fcafbeb54296018eea0012a295 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9ae098095174674aad88797da3b31a6 = $(`<div id="html_a9ae098095174674aad88797da3b31a6" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14pt">         <b>국가:</b> 스웨덴<br>         <b>발전소 명칭:</b> Safeguard<br>         <b>주도업체:</b> <a href="https://group.vattenfall.com/" target="_blank">https://group.vattenfall.com/</a>     </div>     </div>`)[0];
+                popup_581bf4fcafbeb54296018eea0012a295.setContent(html_a9ae098095174674aad88797da3b31a6);
+            
+        
+
+        marker_c029b637472c4dbcbf094160526ffc7e.bindPopup(popup_581bf4fcafbeb54296018eea0012a295)
+        ;
+
+        
+    
+</script>
+</html>
