@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8811f26e0db9be6518470b0f06ee7fb7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8811f26e0db9be6518470b0f06ee7fb7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8811f26e0db9be6518470b0f06ee7fb7 = L.map(
+                "map_8811f26e0db9be6518470b0f06ee7fb7",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bfa8e267ba247c9d93e42634f7f86bc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7bfa8e267ba247c9d93e42634f7f86bc.addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var marker_fe77adf6c65ff534dd4662dceaf40778 = L.marker(
+                [31.0, 28.45],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_e3e43744681d3107eca5784fa7b839d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe77adf6c65ff534dd4662dceaf40778.setIcon(icon_e3e43744681d3107eca5784fa7b839d7);
+        
+    
+        var popup_db5bf7223012ba49f436923bd3b02e3f = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_a9072f57ab6239351a8ebd723fb1829b = $(`<div id="html_a9072f57ab6239351a8ebd723fb1829b" style="width: 100.0%; height: 100.0%;"><b>이집트</b><br>El Dabaa</div>`)[0];
+                popup_db5bf7223012ba49f436923bd3b02e3f.setContent(html_a9072f57ab6239351a8ebd723fb1829b);
+            
+        
+
+        marker_fe77adf6c65ff534dd4662dceaf40778.bindPopup(popup_db5bf7223012ba49f436923bd3b02e3f)
+        ;
+
+        
+    
+    
+            var marker_a02fbcee92d7f18f21b08276d18c6686 = L.marker(
+                [51.205, -3.136],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_c893d3483dfd13633c5f38dc308cf121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a02fbcee92d7f18f21b08276d18c6686.setIcon(icon_c893d3483dfd13633c5f38dc308cf121);
+        
+    
+        var popup_89e41c00e10710645b55b7a113daaac1 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_847b761e0a7d00d4a3f4693f3b20d716 = $(`<div id="html_847b761e0a7d00d4a3f4693f3b20d716" style="width: 100.0%; height: 100.0%;"><b>영국</b><br>Hinkley Point C</div>`)[0];
+                popup_89e41c00e10710645b55b7a113daaac1.setContent(html_847b761e0a7d00d4a3f4693f3b20d716);
+            
+        
+
+        marker_a02fbcee92d7f18f21b08276d18c6686.bindPopup(popup_89e41c00e10710645b55b7a113daaac1)
+        ;
+
+        
+    
+    
+            var marker_b77da31dc68a0881731575669a62cdde = L.marker(
+                [52.213, 1.623],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_51fd039dbb88afd7ac40abdca7eab4e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b77da31dc68a0881731575669a62cdde.setIcon(icon_51fd039dbb88afd7ac40abdca7eab4e7);
+        
+    
+        var popup_777a78890a4f452006cd67200e9dc8d1 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_4feb5a7d24a14719522abfef16bef05e = $(`<div id="html_4feb5a7d24a14719522abfef16bef05e" style="width: 100.0%; height: 100.0%;"><b>영국</b><br>Sizewell C</div>`)[0];
+                popup_777a78890a4f452006cd67200e9dc8d1.setContent(html_4feb5a7d24a14719522abfef16bef05e);
+            
+        
+
+        marker_b77da31dc68a0881731575669a62cdde.bindPopup(popup_777a78890a4f452006cd67200e9dc8d1)
+        ;
+
+        
+    
+    
+            var marker_6307b9c85bd042e154111a545fec9eb0 = L.marker(
+                [33.13, -81.747],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_70a810b9bec2752e7ec2cae7b36990af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6307b9c85bd042e154111a545fec9eb0.setIcon(icon_70a810b9bec2752e7ec2cae7b36990af);
+        
+    
+        var popup_c05364da4ff643e68af75da728bd7e72 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_b3e28c9c6ba844a0af2841986cd60dea = $(`<div id="html_b3e28c9c6ba844a0af2841986cd60dea" style="width: 100.0%; height: 100.0%;"><b>미국</b><br>Vogtle</div>`)[0];
+                popup_c05364da4ff643e68af75da728bd7e72.setContent(html_b3e28c9c6ba844a0af2841986cd60dea);
+            
+        
+
+        marker_6307b9c85bd042e154111a545fec9eb0.bindPopup(popup_c05364da4ff643e68af75da728bd7e72)
+        ;
+
+        
+    
+    
+            var marker_66461952151203b9fdfb62468be068ff = L.marker(
+                [49.2167, 16.6167],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_b580aa3de0eadfe46c47474a794de116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66461952151203b9fdfb62468be068ff.setIcon(icon_b580aa3de0eadfe46c47474a794de116);
+        
+    
+        var popup_d0fc940349be181387d09f4fbaaf4fa0 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_927e592f16e2713a3c57ae37d64bf8fc = $(`<div id="html_927e592f16e2713a3c57ae37d64bf8fc" style="width: 100.0%; height: 100.0%;"><b>체코</b><br>Dukovany</div>`)[0];
+                popup_d0fc940349be181387d09f4fbaaf4fa0.setContent(html_927e592f16e2713a3c57ae37d64bf8fc);
+            
+        
+
+        marker_66461952151203b9fdfb62468be068ff.bindPopup(popup_d0fc940349be181387d09f4fbaaf4fa0)
+        ;
+
+        
+    
+    
+            var marker_d8f25b219afda51445840f61bda0d3d2 = L.marker(
+                [36.1444, 33.2878],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_c6c14be3976220a9e65b3c9f03e25e97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8f25b219afda51445840f61bda0d3d2.setIcon(icon_c6c14be3976220a9e65b3c9f03e25e97);
+        
+    
+        var popup_6a5f99df4994d0a73041c2af16eb186a = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_d0382c6549a3c3762730816a06343fd0 = $(`<div id="html_d0382c6549a3c3762730816a06343fd0" style="width: 100.0%; height: 100.0%;"><b>터키</b><br>Akkuyu</div>`)[0];
+                popup_6a5f99df4994d0a73041c2af16eb186a.setContent(html_d0382c6549a3c3762730816a06343fd0);
+            
+        
+
+        marker_d8f25b219afda51445840f61bda0d3d2.bindPopup(popup_6a5f99df4994d0a73041c2af16eb186a)
+        ;
+
+        
+    
+    
+            var marker_c4723a33a1229cc84fe1f272cfa1aa90 = L.marker(
+                [61.24, 21.45],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_a9c247c827c64dbf19b49333fd292801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4723a33a1229cc84fe1f272cfa1aa90.setIcon(icon_a9c247c827c64dbf19b49333fd292801);
+        
+    
+        var popup_babd1b990d357a6c174a339a8af97746 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_d0345bf807749a0b87a14aecf8d42fce = $(`<div id="html_d0345bf807749a0b87a14aecf8d42fce" style="width: 100.0%; height: 100.0%;"><b>핀란드</b><br>Olkiluoto 3</div>`)[0];
+                popup_babd1b990d357a6c174a339a8af97746.setContent(html_d0345bf807749a0b87a14aecf8d42fce);
+            
+        
+
+        marker_c4723a33a1229cc84fe1f272cfa1aa90.bindPopup(popup_babd1b990d357a6c174a339a8af97746)
+        ;
+
+        
+    
+    
+            var marker_0234f3bdd8a4ccd02b5f5fa8d43205ab = L.marker(
+                [24.5634, 54.416],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_e143d5ee422ec62da5582f8ce5ff18fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0234f3bdd8a4ccd02b5f5fa8d43205ab.setIcon(icon_e143d5ee422ec62da5582f8ce5ff18fa);
+        
+    
+        var popup_d0d48375e190a0362255b541f44362cb = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_e995cf738e0754f167e410da271304e0 = $(`<div id="html_e995cf738e0754f167e410da271304e0" style="width: 100.0%; height: 100.0%;"><b>아랍에미리트</b><br>Barakah</div>`)[0];
+                popup_d0d48375e190a0362255b541f44362cb.setContent(html_e995cf738e0754f167e410da271304e0);
+            
+        
+
+        marker_0234f3bdd8a4ccd02b5f5fa8d43205ab.bindPopup(popup_d0d48375e190a0362255b541f44362cb)
+        ;
+
+        
+    
+    
+            var marker_6b76dce0eca9303365b5b9999ff49c41 = L.marker(
+                [42.76, -107.54],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_62d3a33b23d52189a1ca6fcd7053d5d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b76dce0eca9303365b5b9999ff49c41.setIcon(icon_62d3a33b23d52189a1ca6fcd7053d5d5);
+        
+    
+        var popup_e2bb06bce2d8b90e331e41b89fea0b4e = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_7c1e823ea4f371336a89e66b5190d361 = $(`<div id="html_7c1e823ea4f371336a89e66b5190d361" style="width: 100.0%; height: 100.0%;"><b>미국</b><br>Natrium</div>`)[0];
+                popup_e2bb06bce2d8b90e331e41b89fea0b4e.setContent(html_7c1e823ea4f371336a89e66b5190d361);
+            
+        
+
+        marker_6b76dce0eca9303365b5b9999ff49c41.bindPopup(popup_e2bb06bce2d8b90e331e41b89fea0b4e)
+        ;
+
+        
+    
+    
+            var marker_17a947c0dfef9f1d61e636808904a8a7 = L.marker(
+                [59.8, 17.9],
+                {}
+            ).addTo(map_8811f26e0db9be6518470b0f06ee7fb7);
+        
+    
+            var icon_172cf455f31e5e221fe7c2f81b292c34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17a947c0dfef9f1d61e636808904a8a7.setIcon(icon_172cf455f31e5e221fe7c2f81b292c34);
+        
+    
+        var popup_4ab6920aab0ae96d5af9595eba6e96ff = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            
+                var html_32a81d303f0c23717965fadebd1bbba0 = $(`<div id="html_32a81d303f0c23717965fadebd1bbba0" style="width: 100.0%; height: 100.0%;"><b>스웨덴</b><br>Safeguard</div>`)[0];
+                popup_4ab6920aab0ae96d5af9595eba6e96ff.setContent(html_32a81d303f0c23717965fadebd1bbba0);
+            
+        
+
+        marker_17a947c0dfef9f1d61e636808904a8a7.bindPopup(popup_4ab6920aab0ae96d5af9595eba6e96ff)
+        ;
+
+        
+    
+</script>
+</html>
