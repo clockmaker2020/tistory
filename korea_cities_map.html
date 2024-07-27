@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -21,276 +18,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_defd721b38943b6074ebedcc8a4253b3 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-            </style>
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        #map_defd721b38943b6074ebedcc8a4253b3 {
+            position: relative;
+            width: 100.0%;
+            height: 400px; /* iframe height */
+            left: 0.0%;
+            top: 0.0%;
+        }
+    </style>
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_defd721b38943b6074ebedcc8a4253b3" ></div>
-        
+    <div class="folium-map" id="map_defd721b38943b6074ebedcc8a4253b3" ></div>
 </body>
 <script>
+    var map_defd721b38943b6074ebedcc8a4253b3 = L.map(
+        "map_defd721b38943b6074ebedcc8a4253b3",
+        {
+            center: [37.5665, 126.9780], // 서울의 중심좌표
+            crs: L.CRS.EPSG3857,
+            zoom: 12, // 확대 수준
+            zoomControl: true,
+            preferCanvas: false,
+        }
+    );
     
-    
-            var map_defd721b38943b6074ebedcc8a4253b3 = L.map(
-                "map_defd721b38943b6074ebedcc8a4253b3",
-                {
-                    center: [37.5, 127.5],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
+    var tile_layer_657d7bb9aa706aec4d3767e08010ca44 = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {"attribution": "Data by © OpenStreetMap, under ODbL.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+    ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
 
-            
-
-        
-    
-            var tile_layer_657d7bb9aa706aec4d3767e08010ca44 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-            var marker_af0ec7385c646b341d476aa4923cf5c5 = L.marker(
-                [37.1996, 126.831],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_49195a9ddb3aadc637bbe7509eeb3e97 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_96b0b059eb17720adba2458b3778e88c = $(`<div id="html_96b0b059eb17720adba2458b3778e88c" style="width: 100.0%; height: 100.0%;">화성</div>`)[0];
-            popup_49195a9ddb3aadc637bbe7509eeb3e97.setContent(html_96b0b059eb17720adba2458b3778e88c);
-        
-
-        marker_af0ec7385c646b341d476aa4923cf5c5.bindPopup(popup_49195a9ddb3aadc637bbe7509eeb3e97)
-        ;
-
-        
-    
-    
-            var marker_4914faa54eedc76ec9e0c183cce99c16 = L.marker(
-                [36.992, 127.1122],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_1012dc2824acd8f26ca80f5ed308faf0 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_19871df7ded4da3d47a9892278030fbf = $(`<div id="html_19871df7ded4da3d47a9892278030fbf" style="width: 100.0%; height: 100.0%;">평택</div>`)[0];
-            popup_1012dc2824acd8f26ca80f5ed308faf0.setContent(html_19871df7ded4da3d47a9892278030fbf);
-        
-
-        marker_4914faa54eedc76ec9e0c183cce99c16.bindPopup(popup_1012dc2824acd8f26ca80f5ed308faf0)
-        ;
-
-        
-    
-    
-            var marker_43c65bbc6c9c837bc4dae9f7b9b58873 = L.marker(
-                [37.5393, 127.2141],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_f4ccfd732f66023d2eafebf573283086 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_d05d7a445b699888ff4bbf68963a849e = $(`<div id="html_d05d7a445b699888ff4bbf68963a849e" style="width: 100.0%; height: 100.0%;">하남</div>`)[0];
-            popup_f4ccfd732f66023d2eafebf573283086.setContent(html_d05d7a445b699888ff4bbf68963a849e);
-        
-
-        marker_43c65bbc6c9c837bc4dae9f7b9b58873.bindPopup(popup_f4ccfd732f66023d2eafebf573283086)
-        ;
-
-        
-    
-    
-            var marker_ea2ffc7042d4dbd3eef4ee772de95001 = L.marker(
-                [37.3615, 126.9354],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_f73ba44bff6ddfced7763708f6105dc9 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_0de3263b9841181e4c6ef0cf0b04a3f0 = $(`<div id="html_0de3263b9841181e4c6ef0cf0b04a3f0" style="width: 100.0%; height: 100.0%;">군포</div>`)[0];
-            popup_f73ba44bff6ddfced7763708f6105dc9.setContent(html_0de3263b9841181e4c6ef0cf0b04a3f0);
-        
-
-        marker_ea2ffc7042d4dbd3eef4ee772de95001.bindPopup(popup_f73ba44bff6ddfced7763708f6105dc9)
-        ;
-
-        
-    
-    
-            var marker_96a2a75ad6a9ef217febbb21d6254947 = L.marker(
-                [37.5944, 127.1297],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_83ee603502d50c0029d2ff0f3928c9f6 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_1287c3f7a7b84b1e1c1ae940ed5c86f7 = $(`<div id="html_1287c3f7a7b84b1e1c1ae940ed5c86f7" style="width: 100.0%; height: 100.0%;">구리</div>`)[0];
-            popup_83ee603502d50c0029d2ff0f3928c9f6.setContent(html_1287c3f7a7b84b1e1c1ae940ed5c86f7);
-        
-
-        marker_96a2a75ad6a9ef217febbb21d6254947.bindPopup(popup_83ee603502d50c0029d2ff0f3928c9f6)
-        ;
-
-        
-    
-    
-            var marker_6d3d771e2b42063dba3fbf4ecbdb4e8a = L.marker(
-                [37.0083, 127.2795],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_5050ca4f6c3899bac303f0b80a617276 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_4c0c0b3092d4207a412f24722aa1ad68 = $(`<div id="html_4c0c0b3092d4207a412f24722aa1ad68" style="width: 100.0%; height: 100.0%;">안성</div>`)[0];
-            popup_5050ca4f6c3899bac303f0b80a617276.setContent(html_4c0c0b3092d4207a412f24722aa1ad68);
-        
-
-        marker_6d3d771e2b42063dba3fbf4ecbdb4e8a.bindPopup(popup_5050ca4f6c3899bac303f0b80a617276)
-        ;
-
-        
-    
-    
-            var marker_384e5add3e889ab4c2f4598aa87f9026 = L.marker(
-                [37.8944, 127.2006],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_d9d36cbd51a0151ee512a5aeab72badc = L.popup({"maxWidth": "100%"});
-
-        
-            var html_091387653370e2bdf4585cb96e23db4f = $(`<div id="html_091387653370e2bdf4585cb96e23db4f" style="width: 100.0%; height: 100.0%;">포천</div>`)[0];
-            popup_d9d36cbd51a0151ee512a5aeab72badc.setContent(html_091387653370e2bdf4585cb96e23db4f);
-        
-
-        marker_384e5add3e889ab4c2f4598aa87f9026.bindPopup(popup_d9d36cbd51a0151ee512a5aeab72badc)
-        ;
-
-        
-    
-    
-            var marker_211bafc4a1b172858016334a855f8503 = L.marker(
-                [37.2983, 127.6374],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_753c08b57199047d68836054ae39907a = L.popup({"maxWidth": "100%"});
-
-        
-            var html_0c5eca70d4cc98240790013072b51642 = $(`<div id="html_0c5eca70d4cc98240790013072b51642" style="width: 100.0%; height: 100.0%;">여주</div>`)[0];
-            popup_753c08b57199047d68836054ae39907a.setContent(html_0c5eca70d4cc98240790013072b51642);
-        
-
-        marker_211bafc4a1b172858016334a855f8503.bindPopup(popup_753c08b57199047d68836054ae39907a)
-        ;
-
-        
-    
-    
-            var marker_693585bdba9c736669f2de44444994c4 = L.marker(
-                [37.4292, 126.9878],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_65e66355d91b372fc6cf6857ac4c28cf = L.popup({"maxWidth": "100%"});
-
-        
-            var html_fc97291bd0096c3a4c2c9bf6c188659b = $(`<div id="html_fc97291bd0096c3a4c2c9bf6c188659b" style="width: 100.0%; height: 100.0%;">과천</div>`)[0];
-            popup_65e66355d91b372fc6cf6857ac4c28cf.setContent(html_fc97291bd0096c3a4c2c9bf6c188659b);
-        
-
-        marker_693585bdba9c736669f2de44444994c4.bindPopup(popup_65e66355d91b372fc6cf6857ac4c28cf)
-        ;
-
-        
-    
-    
-            var marker_ddf86317f4d818e9c51d4d176c97bf76 = L.marker(
-                [37.9039, 127.0603],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_67715c6ef365ea7d3b34fb567a83433f = L.popup({"maxWidth": "100%"});
-
-        
-            var html_91d519d4ef5dfb797874a33d924001cc = $(`<div id="html_91d519d4ef5dfb797874a33d924001cc" style="width: 100.0%; height: 100.0%;">동두천</div>`)[0];
-            popup_67715c6ef365ea7d3b34fb567a83433f.setContent(html_91d519d4ef5dfb797874a33d924001cc);
-        
-
-        marker_ddf86317f4d818e9c51d4d176c97bf76.bindPopup(popup_67715c6ef365ea7d3b34fb567a83433f)
-        ;
-
-        
-    
-    
-            var marker_10a4029fea8eaa07d3328917f8ff1678 = L.marker(
-                [37.8317, 127.5092],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_636e513174515baa8d1e3cd22aaa165f = L.popup({"maxWidth": "100%"});
-
-        
-            var html_ac6ae8dac582c71f83ef9273bd46bd6b = $(`<div id="html_ac6ae8dac582c71f83ef9273bd46bd6b" style="width: 100.0%; height: 100.0%;">가평</div>`)[0];
-            popup_636e513174515baa8d1e3cd22aaa165f.setContent(html_ac6ae8dac582c71f83ef9273bd46bd6b);
-        
-
-        marker_10a4029fea8eaa07d3328917f8ff1678.bindPopup(popup_636e513174515baa8d1e3cd22aaa165f)
-        ;
-
-        
-    
-    
-            var marker_5f2e97c62e6d2b861f86e007d822fe5c = L.marker(
-                [38.0962, 127.075],
-                {}
-            ).addTo(map_defd721b38943b6074ebedcc8a4253b3);
-        
-    
-        var popup_b79b1a569c4e17b370c667be38e5d8cd = L.popup({"maxWidth": "100%"});
-
-        
-            var html_0cb4cb42a366e59763620670644554e2 = $(`<div id="html_0cb4cb42a366e59763620670644554e2" style="width: 100.0%; height: 100.0%;">연천</div>`)[0];
-            popup_b79b1a569c4e17b370c667be38e5d8cd.setContent(html_0cb4cb42a366e59763620670644554e2);
-        
-
-        marker_5f2e97c62e6d2b861f86e007d822fe5c.bindPopup(popup_b79b1a569c4e17b370c667be38e5d8cd)
-        ;
-
-        
-    
+    // 마커 추가 코드...
 </script>
 </html>
