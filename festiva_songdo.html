@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4667483bd61377df942ad2e289e3ed21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4667483bd61377df942ad2e289e3ed21" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4667483bd61377df942ad2e289e3ed21 = L.map(
+                "map_4667483bd61377df942ad2e289e3ed21",
+                {
+                    center: [37.394536, 126.654689],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5bbc928e38d1915dd3a2f4fcb68662a1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var marker_d64cf206ad65bd2c4298339ba102f0af = L.marker(
+                [37.3974, 126.6572],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_b914143146b62dc9a41b9d9dbf29819e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d64cf206ad65bd2c4298339ba102f0af.setIcon(icon_b914143146b62dc9a41b9d9dbf29819e);
+        
+    
+        var popup_efa18035f7c3d247903715f54d463f0f = L.popup({"maxWidth": 200});
+
+        
+            var html_31a2a57cf630e6095e197293088e84f0 = $(`<div id="html_31a2a57cf630e6095e197293088e84f0" style="width: 100.0%; height: 100.0%;">송도국제어린이도서관 주차장</div>`)[0];
+            popup_efa18035f7c3d247903715f54d463f0f.setContent(html_31a2a57cf630e6095e197293088e84f0);
+        
+
+        marker_d64cf206ad65bd2c4298339ba102f0af.bindPopup(popup_efa18035f7c3d247903715f54d463f0f)
+        ;
+
+        
+    
+    
+            var marker_499c54c52b29729045762b8e404233a7 = L.marker(
+                [37.3928, 126.6552],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_5b85509ddafb0f41a9962af3e1264acf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_499c54c52b29729045762b8e404233a7.setIcon(icon_5b85509ddafb0f41a9962af3e1264acf);
+        
+    
+        var popup_af15196eda7e5b055ca4ab89c1d607c5 = L.popup({"maxWidth": 200});
+
+        
+            var html_d55fe6028a93c81b7cd0d011add968d7 = $(`<div id="html_d55fe6028a93c81b7cd0d011add968d7" style="width: 100.0%; height: 100.0%;">새아침공원 주차장 (거리 600m)</div>`)[0];
+            popup_af15196eda7e5b055ca4ab89c1d607c5.setContent(html_d55fe6028a93c81b7cd0d011add968d7);
+        
+
+        marker_499c54c52b29729045762b8e404233a7.bindPopup(popup_af15196eda7e5b055ca4ab89c1d607c5)
+        ;
+
+        
+    
+    
+            var marker_e0613f7ab19a4efc7cfb0ea1e4f396f2 = L.marker(
+                [37.3912, 126.6546],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_cff26c38b156c4491d7f79c9947ebb01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0613f7ab19a4efc7cfb0ea1e4f396f2.setIcon(icon_cff26c38b156c4491d7f79c9947ebb01);
+        
+    
+        var popup_07b12640ee9fe965a064009b23c8d269 = L.popup({"maxWidth": 200});
+
+        
+            var html_61384543ecef97cc81799d9cf99ddc62 = $(`<div id="html_61384543ecef97cc81799d9cf99ddc62" style="width: 100.0%; height: 100.0%;">새아침공원 주차장 (거리 300m)</div>`)[0];
+            popup_07b12640ee9fe965a064009b23c8d269.setContent(html_61384543ecef97cc81799d9cf99ddc62);
+        
+
+        marker_e0613f7ab19a4efc7cfb0ea1e4f396f2.bindPopup(popup_07b12640ee9fe965a064009b23c8d269)
+        ;
+
+        
+    
+    
+            var marker_33108d9e7aa69b3d5cfb78a0e649f591 = L.marker(
+                [37.3909, 126.6541],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_03c3fdbc67554043a9c669bd7aa8a9a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33108d9e7aa69b3d5cfb78a0e649f591.setIcon(icon_03c3fdbc67554043a9c669bd7aa8a9a4);
+        
+    
+        var popup_72caa8d98655a154be820af9e65f6b21 = L.popup({"maxWidth": 200});
+
+        
+            var html_d7e2f3995ce2327272c84f4fc6abff9f = $(`<div id="html_d7e2f3995ce2327272c84f4fc6abff9f" style="width: 100.0%; height: 100.0%;">신송고등학교 주차장</div>`)[0];
+            popup_72caa8d98655a154be820af9e65f6b21.setContent(html_d7e2f3995ce2327272c84f4fc6abff9f);
+        
+
+        marker_33108d9e7aa69b3d5cfb78a0e649f591.bindPopup(popup_72caa8d98655a154be820af9e65f6b21)
+        ;
+
+        
+    
+    
+            var marker_446e94e5f5d8afd78b8937e30eef24c1 = L.marker(
+                [37.3934, 126.6523],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_95964643eeb1d2cbbd77128d1bed838d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_446e94e5f5d8afd78b8937e30eef24c1.setIcon(icon_95964643eeb1d2cbbd77128d1bed838d);
+        
+    
+        var popup_def9efc991dddb62f43c2e863db549af = L.popup({"maxWidth": 200});
+
+        
+            var html_f06288bceca7db02246bea32239f566a = $(`<div id="html_f06288bceca7db02246bea32239f566a" style="width: 100.0%; height: 100.0%;">신송초등학교 주차장</div>`)[0];
+            popup_def9efc991dddb62f43c2e863db549af.setContent(html_f06288bceca7db02246bea32239f566a);
+        
+
+        marker_446e94e5f5d8afd78b8937e30eef24c1.bindPopup(popup_def9efc991dddb62f43c2e863db549af)
+        ;
+
+        
+    
+    
+            var marker_61e82d32c4e3bd9270b66f321c9cb272 = L.marker(
+                [37.3945, 126.6515],
+                {}
+            ).addTo(map_4667483bd61377df942ad2e289e3ed21);
+        
+    
+            var icon_7876b080944a58804852be79f634f5d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61e82d32c4e3bd9270b66f321c9cb272.setIcon(icon_7876b080944a58804852be79f634f5d8);
+        
+    
+        var popup_e65ae570b3fee12ea5e3917b7fe978ba = L.popup({"maxWidth": 200});
+
+        
+            var html_b4fe000221e6f18304e7e4939bc6e52b = $(`<div id="html_b4fe000221e6f18304e7e4939bc6e52b" style="width: 100.0%; height: 100.0%;">신송중학교 주차장</div>`)[0];
+            popup_e65ae570b3fee12ea5e3917b7fe978ba.setContent(html_b4fe000221e6f18304e7e4939bc6e52b);
+        
+
+        marker_61e82d32c4e3bd9270b66f321c9cb272.bindPopup(popup_e65ae570b3fee12ea5e3917b7fe978ba)
+        ;
+
+        
+    
+</script>
+</html>
