@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6368621ff24560d14f8abfe92da7ddcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6368621ff24560d14f8abfe92da7ddcb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6368621ff24560d14f8abfe92da7ddcb = L.map(
+                "map_6368621ff24560d14f8abfe92da7ddcb",
+                {
+                    center: [45.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08d6355bfe5b16af8ea9877c68c8ccd1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_08d6355bfe5b16af8ea9877c68c8ccd1.addTo(map_6368621ff24560d14f8abfe92da7ddcb);
+        
+    
+            var marker_cluster_50fdb07eca9f397e53c5ab714316d1b2 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_a7dda5ed04805548536fce6962cdfef1 = L.marker(
+                [43.7685, 11.2637],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_4269c7a051891ab719538d09ebaf782d = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_dcae226abe5c4b38ac1a91619816a0af = $(`<div id="html_dcae226abe5c4b38ac1a91619816a0af" style="width: 100.0%; height: 100.0%;">1. 센티노 성모, Casa Buonarroti</div>`)[0];
+                popup_4269c7a051891ab719538d09ebaf782d.setContent(html_dcae226abe5c4b38ac1a91619816a0af);
+            
+        
+
+        marker_a7dda5ed04805548536fce6962cdfef1.bindPopup(popup_4269c7a051891ab719538d09ebaf782d)
+        ;
+
+        
+    
+    
+            var marker_9d002ccf59b2b79a0aa12ea09a42d8e1 = L.marker(
+                [43.7699, 11.2577],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_3c0dde5d5753cf04332536902ec79874 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_fe2ea7218740263c120cc9056a1a41e5 = $(`<div id="html_fe2ea7218740263c120cc9056a1a41e5" style="width: 100.0%; height: 100.0%;">2. 바쿠스, Museo Nazionale del Bargello</div>`)[0];
+                popup_3c0dde5d5753cf04332536902ec79874.setContent(html_fe2ea7218740263c120cc9056a1a41e5);
+            
+        
+
+        marker_9d002ccf59b2b79a0aa12ea09a42d8e1.bindPopup(popup_3c0dde5d5753cf04332536902ec79874)
+        ;
+
+        
+    
+    
+            var marker_31b4a76b8af2758c11caaa2725389445 = L.marker(
+                [41.9029, 12.4534],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_f100c8e8152a958edfac41e5a1e97ac4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c00965b529297a001c3a7ac79c678738 = $(`<div id="html_c00965b529297a001c3a7ac79c678738" style="width: 100.0%; height: 100.0%;">3. 피에타, St. Peter's Basilica</div>`)[0];
+                popup_f100c8e8152a958edfac41e5a1e97ac4.setContent(html_c00965b529297a001c3a7ac79c678738);
+            
+        
+
+        marker_31b4a76b8af2758c11caaa2725389445.bindPopup(popup_f100c8e8152a958edfac41e5a1e97ac4)
+        ;
+
+        
+    
+    
+            var marker_fe8668b62ef8d02c35dda3f0cdaedd12 = L.marker(
+                [43.7763, 11.2589],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_1c522b0e0bb23b2c0a4229d115129d88 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_353d794f3ea47f195f7f1d8a05e9fe31 = $(`<div id="html_353d794f3ea47f195f7f1d8a05e9fe31" style="width: 100.0%; height: 100.0%;">4. 다비드, Galleria dell'Accademia</div>`)[0];
+                popup_1c522b0e0bb23b2c0a4229d115129d88.setContent(html_353d794f3ea47f195f7f1d8a05e9fe31);
+            
+        
+
+        marker_fe8668b62ef8d02c35dda3f0cdaedd12.bindPopup(popup_1c522b0e0bb23b2c0a4229d115129d88)
+        ;
+
+        
+    
+    
+            var marker_7a939f01252471c2ebe7f7184805c6fb = L.marker(
+                [41.8932, 12.4935],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_5e37eac433b0568e007a273f75c0bc4b = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8f5f61789bf648ed35f6f752ccc3e4b4 = $(`<div id="html_8f5f61789bf648ed35f6f752ccc3e4b4" style="width: 100.0%; height: 100.0%;">5. 모세, San Pietro in Vincoli</div>`)[0];
+                popup_5e37eac433b0568e007a273f75c0bc4b.setContent(html_8f5f61789bf648ed35f6f752ccc3e4b4);
+            
+        
+
+        marker_7a939f01252471c2ebe7f7184805c6fb.bindPopup(popup_5e37eac433b0568e007a273f75c0bc4b)
+        ;
+
+        
+    
+    
+            var marker_2bbee26157c37fdbc840459c442bf3f2 = L.marker(
+                [48.8606, 2.3376],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_a1503200c655f497a9543fbb0c7bb89d = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b33c64811fc5eae884a1db06182de373 = $(`<div id="html_b33c64811fc5eae884a1db06182de373" style="width: 100.0%; height: 100.0%;">6. 반항하는 노예, Louvre Museum</div>`)[0];
+                popup_a1503200c655f497a9543fbb0c7bb89d.setContent(html_b33c64811fc5eae884a1db06182de373);
+            
+        
+
+        marker_2bbee26157c37fdbc840459c442bf3f2.bindPopup(popup_a1503200c655f497a9543fbb0c7bb89d)
+        ;
+
+        
+    
+    
+            var marker_fea9764a2230951dbd9b8afdff3f95e7 = L.marker(
+                [48.8606, 2.3376],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_2e7fb0c5feaa4994f6076a4f59bd71dd = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_20c855031cedd9fee87c4a5f1534d6a5 = $(`<div id="html_20c855031cedd9fee87c4a5f1534d6a5" style="width: 100.0%; height: 100.0%;">7. 노예 시리즈, Louvre Museum</div>`)[0];
+                popup_2e7fb0c5feaa4994f6076a4f59bd71dd.setContent(html_20c855031cedd9fee87c4a5f1534d6a5);
+            
+        
+
+        marker_fea9764a2230951dbd9b8afdff3f95e7.bindPopup(popup_2e7fb0c5feaa4994f6076a4f59bd71dd)
+        ;
+
+        
+    
+    
+            var marker_951a3caee5574cfbad80b2b509e37d4a = L.marker(
+                [43.7745, 11.2536],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_ac1ae2871f6bf3f2de847177f34f83ad = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3953f79c78526a53366e4f10485bd513 = $(`<div id="html_3953f79c78526a53366e4f10485bd513" style="width: 100.0%; height: 100.0%;">8. 새벽, 저녁, 낮과 밤, Medici Chapel</div>`)[0];
+                popup_ac1ae2871f6bf3f2de847177f34f83ad.setContent(html_3953f79c78526a53366e4f10485bd513);
+            
+        
+
+        marker_951a3caee5574cfbad80b2b509e37d4a.bindPopup(popup_ac1ae2871f6bf3f2de847177f34f83ad)
+        ;
+
+        
+    
+    
+            var marker_5b0767f9d0a827b057e02d17be1c505c = L.marker(
+                [43.7745, 11.2536],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_ed7afe9b24cfe47bc2cf5c253ecf8168 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_40f32002f19f047c280c793ae8ee0f89 = $(`<div id="html_40f32002f19f047c280c793ae8ee0f89" style="width: 100.0%; height: 100.0%;">9. 메디치 무덤 조각상, Medici Chapel</div>`)[0];
+                popup_ed7afe9b24cfe47bc2cf5c253ecf8168.setContent(html_40f32002f19f047c280c793ae8ee0f89);
+            
+        
+
+        marker_5b0767f9d0a827b057e02d17be1c505c.bindPopup(popup_ed7afe9b24cfe47bc2cf5c253ecf8168)
+        ;
+
+        
+    
+    
+            var marker_bc812da3c484018489c90fbd985809f3 = L.marker(
+                [43.7745, 11.2536],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_f85241265407dc75d8c7481bf76e83ce = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b01957f3b27f4951fd82ed0c8c999a25 = $(`<div id="html_b01957f3b27f4951fd82ed0c8c999a25" style="width: 100.0%; height: 100.0%;">10. 성모 마리아와 아기 예수, San Lorenzo</div>`)[0];
+                popup_f85241265407dc75d8c7481bf76e83ce.setContent(html_b01957f3b27f4951fd82ed0c8c999a25);
+            
+        
+
+        marker_bc812da3c484018489c90fbd985809f3.bindPopup(popup_f85241265407dc75d8c7481bf76e83ce)
+        ;
+
+        
+    
+    
+            var marker_cb770bbe5db69aa72d48242ad60eff9d = L.marker(
+                [45.4706, 9.1793],
+                {}
+            ).addTo(marker_cluster_50fdb07eca9f397e53c5ab714316d1b2);
+        
+    
+        var popup_d5bc39fe78046681ce521d116c026518 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_cca610d6b6022f1d82b077889e301e8d = $(`<div id="html_cca610d6b6022f1d82b077889e301e8d" style="width: 100.0%; height: 100.0%;">11. 론다니니 피에타, Castello Sforzesco</div>`)[0];
+                popup_d5bc39fe78046681ce521d116c026518.setContent(html_cca610d6b6022f1d82b077889e301e8d);
+            
+        
+
+        marker_cb770bbe5db69aa72d48242ad60eff9d.bindPopup(popup_d5bc39fe78046681ce521d116c026518)
+        ;
+
+        
+    
+    
+            marker_cluster_50fdb07eca9f397e53c5ab714316d1b2.addTo(map_6368621ff24560d14f8abfe92da7ddcb);
+        
+</script>
+</html>
