@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b191b0390b811d24ec30aeb755d5e29 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8b191b0390b811d24ec30aeb755d5e29" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8b191b0390b811d24ec30aeb755d5e29 = L.map(
+                "map_8b191b0390b811d24ec30aeb755d5e29",
+                {
+                    center: [20.0, 100.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8ec1e1cee56075adc6bba963f2ab2794 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8ec1e1cee56075adc6bba963f2ab2794.addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+            var circle_marker_690a6f7ccd7fd47ef5b76dcb273d3dfe = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_94e16e5a81fca35c85bb33e2fa1ba11e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4354b9d64050a90bcd74da33359f5b12 = $(`<div id="html_4354b9d64050a90bcd74da33359f5b12" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>인도</div></div>`)[0];
+                popup_94e16e5a81fca35c85bb33e2fa1ba11e.setContent(html_4354b9d64050a90bcd74da33359f5b12);
+            
+        
+
+        circle_marker_690a6f7ccd7fd47ef5b76dcb273d3dfe.bindPopup(popup_94e16e5a81fca35c85bb33e2fa1ba11e)
+        ;
+
+        
+    
+    
+            var circle_marker_2916f37cab0005d1acb65190d0a2c208 = L.circleMarker(
+                [-0.7893, 113.9213],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_5212d12748d5b4b1d684cbba0c66115e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0486a4a058839680fe653d5a54fb14fb = $(`<div id="html_0486a4a058839680fe653d5a54fb14fb" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>인도네시아</div></div>`)[0];
+                popup_5212d12748d5b4b1d684cbba0c66115e.setContent(html_0486a4a058839680fe653d5a54fb14fb);
+            
+        
+
+        circle_marker_2916f37cab0005d1acb65190d0a2c208.bindPopup(popup_5212d12748d5b4b1d684cbba0c66115e)
+        ;
+
+        
+    
+    
+            var circle_marker_9b7dca0a7e5706720a2a9059b5a3f5bd = L.circleMarker(
+                [14.0583, 108.2772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_3c97572bf0276d7e993b4de0d593cf95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62895ed89f9628fac85274aa7dcb5d70 = $(`<div id="html_62895ed89f9628fac85274aa7dcb5d70" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>베트남</div></div>`)[0];
+                popup_3c97572bf0276d7e993b4de0d593cf95.setContent(html_62895ed89f9628fac85274aa7dcb5d70);
+            
+        
+
+        circle_marker_9b7dca0a7e5706720a2a9059b5a3f5bd.bindPopup(popup_3c97572bf0276d7e993b4de0d593cf95)
+        ;
+
+        
+    
+    
+            var circle_marker_382c8d8203d07eaa4834546ee61ef7ef = L.circleMarker(
+                [12.8797, 121.774],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_dbb9adc34116aaf1e2ea6d3c10992529 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0237f897d12dd89a7b7ee1c7e24e22c5 = $(`<div id="html_0237f897d12dd89a7b7ee1c7e24e22c5" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>필리핀</div></div>`)[0];
+                popup_dbb9adc34116aaf1e2ea6d3c10992529.setContent(html_0237f897d12dd89a7b7ee1c7e24e22c5);
+            
+        
+
+        circle_marker_382c8d8203d07eaa4834546ee61ef7ef.bindPopup(popup_dbb9adc34116aaf1e2ea6d3c10992529)
+        ;
+
+        
+    
+    
+            var circle_marker_a73227e0bcf77139064f92771fa3a560 = L.circleMarker(
+                [4.2105, 101.9758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_b0cdb8a8af4296dd6725fc4c96023537 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5069e0d1efa3037a5989fa2cc1acc65 = $(`<div id="html_a5069e0d1efa3037a5989fa2cc1acc65" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>말레이시아</div></div>`)[0];
+                popup_b0cdb8a8af4296dd6725fc4c96023537.setContent(html_a5069e0d1efa3037a5989fa2cc1acc65);
+            
+        
+
+        circle_marker_a73227e0bcf77139064f92771fa3a560.bindPopup(popup_b0cdb8a8af4296dd6725fc4c96023537)
+        ;
+
+        
+    
+    
+            var circle_marker_a14cff54035af5d20c8dd0052aec1ac9 = L.circleMarker(
+                [1.3521, 103.8198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_19add0f6df27bbe7fba7991fa9795225 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_373d204caac8dddc68041829580575ce = $(`<div id="html_373d204caac8dddc68041829580575ce" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>싱가포르</div></div>`)[0];
+                popup_19add0f6df27bbe7fba7991fa9795225.setContent(html_373d204caac8dddc68041829580575ce);
+            
+        
+
+        circle_marker_a14cff54035af5d20c8dd0052aec1ac9.bindPopup(popup_19add0f6df27bbe7fba7991fa9795225)
+        ;
+
+        
+    
+    
+            var circle_marker_a10ba3d01f15d3d04dcb1b69a7765e97 = L.circleMarker(
+                [23.685, 90.3563],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_6b699b725e60139418bef8709038915c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c80e62ef05111aef1470083555b2d1c6 = $(`<div id="html_c80e62ef05111aef1470083555b2d1c6" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>방글라데시</div></div>`)[0];
+                popup_6b699b725e60139418bef8709038915c.setContent(html_c80e62ef05111aef1470083555b2d1c6);
+            
+        
+
+        circle_marker_a10ba3d01f15d3d04dcb1b69a7765e97.bindPopup(popup_6b699b725e60139418bef8709038915c)
+        ;
+
+        
+    
+    
+            var circle_marker_298dcd39912388a01ee97c8810e64dad = L.circleMarker(
+                [21.9162, 95.956],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_58e93ee5662d97ac685e096d8f6225e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7efbd6957ee1032f66b5387510f00da6 = $(`<div id="html_7efbd6957ee1032f66b5387510f00da6" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>미얀마</div></div>`)[0];
+                popup_58e93ee5662d97ac685e096d8f6225e6.setContent(html_7efbd6957ee1032f66b5387510f00da6);
+            
+        
+
+        circle_marker_298dcd39912388a01ee97c8810e64dad.bindPopup(popup_58e93ee5662d97ac685e096d8f6225e6)
+        ;
+
+        
+    
+    
+            var circle_marker_122081ba4366635f197022bfab21a2ac = L.circleMarker(
+                [7.8731, 80.7718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_ca9065927e15e41311c219dea9ccb75f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95de9bc4891342c0b8abc23449dda447 = $(`<div id="html_95de9bc4891342c0b8abc23449dda447" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>스리랑카</div></div>`)[0];
+                popup_ca9065927e15e41311c219dea9ccb75f.setContent(html_95de9bc4891342c0b8abc23449dda447);
+            
+        
+
+        circle_marker_122081ba4366635f197022bfab21a2ac.bindPopup(popup_ca9065927e15e41311c219dea9ccb75f)
+        ;
+
+        
+    
+    
+            var circle_marker_8547dec6d2db6a0284739e323b419b6e = L.circleMarker(
+                [30.3753, 69.3451],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_b5d9f47d551829544cf92421c9c953b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ea6255424adc2eb9252a9febcd44dc9 = $(`<div id="html_7ea6255424adc2eb9252a9febcd44dc9" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>파키스탄</div></div>`)[0];
+                popup_b5d9f47d551829544cf92421c9c953b7.setContent(html_7ea6255424adc2eb9252a9febcd44dc9);
+            
+        
+
+        circle_marker_8547dec6d2db6a0284739e323b419b6e.bindPopup(popup_b5d9f47d551829544cf92421c9c953b7)
+        ;
+
+        
+    
+    
+            var circle_marker_0f4bea0b9d238ac878d8d053ae50cbfb = L.circleMarker(
+                [12.5657, 104.991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_658170edf6851c8b3cba0b6cd7abcd80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6292a02582e3c56e03d01c8c351f7de = $(`<div id="html_c6292a02582e3c56e03d01c8c351f7de" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>캄보디아</div></div>`)[0];
+                popup_658170edf6851c8b3cba0b6cd7abcd80.setContent(html_c6292a02582e3c56e03d01c8c351f7de);
+            
+        
+
+        circle_marker_0f4bea0b9d238ac878d8d053ae50cbfb.bindPopup(popup_658170edf6851c8b3cba0b6cd7abcd80)
+        ;
+
+        
+    
+    
+            var circle_marker_53f41c3982dabeef82c3fa3ad8e7eaf0 = L.circleMarker(
+                [19.8563, 102.4955],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_ff2561eb104cdaae0df10e2a1550c2f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e99a07815dce07c212d0127e3222eb34 = $(`<div id="html_e99a07815dce07c212d0127e3222eb34" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>라오스</div></div>`)[0];
+                popup_ff2561eb104cdaae0df10e2a1550c2f9.setContent(html_e99a07815dce07c212d0127e3222eb34);
+            
+        
+
+        circle_marker_53f41c3982dabeef82c3fa3ad8e7eaf0.bindPopup(popup_ff2561eb104cdaae0df10e2a1550c2f9)
+        ;
+
+        
+    
+    
+            var circle_marker_0002e418df8da4039e0cd1d3a84bc62e = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_d73d0967f9c0b7e7cdbc9ffc81876113 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7cd755f3bca344a1ddd8b28d53bb636 = $(`<div id="html_f7cd755f3bca344a1ddd8b28d53bb636" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>대한민국</div></div>`)[0];
+                popup_d73d0967f9c0b7e7cdbc9ffc81876113.setContent(html_f7cd755f3bca344a1ddd8b28d53bb636);
+            
+        
+
+        circle_marker_0002e418df8da4039e0cd1d3a84bc62e.bindPopup(popup_d73d0967f9c0b7e7cdbc9ffc81876113)
+        ;
+
+        
+    
+    
+            var circle_marker_10ad640c1357b3c88b2571017de783be = L.circleMarker(
+                [40.3399, 127.5101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_4c7c4f141e00cc52573602c91577487a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8070d1aa6493092bef0eb30ee6dd7f2 = $(`<div id="html_b8070d1aa6493092bef0eb30ee6dd7f2" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>북한</div></div>`)[0];
+                popup_4c7c4f141e00cc52573602c91577487a.setContent(html_b8070d1aa6493092bef0eb30ee6dd7f2);
+            
+        
+
+        circle_marker_10ad640c1357b3c88b2571017de783be.bindPopup(popup_4c7c4f141e00cc52573602c91577487a)
+        ;
+
+        
+    
+    
+            var circle_marker_2288de5882b771be93ad4d8fc63c9aad = L.circleMarker(
+                [23.6978, 120.9605],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_17ed39f30fb2b30815b8be921b53daee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_466b35d03c6bb765438d846a59c02d38 = $(`<div id="html_466b35d03c6bb765438d846a59c02d38" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>대만</div></div>`)[0];
+                popup_17ed39f30fb2b30815b8be921b53daee.setContent(html_466b35d03c6bb765438d846a59c02d38);
+            
+        
+
+        circle_marker_2288de5882b771be93ad4d8fc63c9aad.bindPopup(popup_17ed39f30fb2b30815b8be921b53daee)
+        ;
+
+        
+    
+    
+            var circle_marker_e34bc0b0590fb30136f6f755ed6480ea = L.circleMarker(
+                [22.3193, 114.1694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_186d6effad8ab38c64ee844cba3d498d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca3faa74e7fb3f2f788103b9e1abfa14 = $(`<div id="html_ca3faa74e7fb3f2f788103b9e1abfa14" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>홍콩</div></div>`)[0];
+                popup_186d6effad8ab38c64ee844cba3d498d.setContent(html_ca3faa74e7fb3f2f788103b9e1abfa14);
+            
+        
+
+        circle_marker_e34bc0b0590fb30136f6f755ed6480ea.bindPopup(popup_186d6effad8ab38c64ee844cba3d498d)
+        ;
+
+        
+    
+    
+            var circle_marker_19ceab2b2583870cb0dbfc9d17c356c8 = L.circleMarker(
+                [4.5353, 114.7277],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_1b365c507839f5184809d1e2f1ffffa7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_099174a7d42bceef90e66dded630b72f = $(`<div id="html_099174a7d42bceef90e66dded630b72f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>브루나이</div></div>`)[0];
+                popup_1b365c507839f5184809d1e2f1ffffa7.setContent(html_099174a7d42bceef90e66dded630b72f);
+            
+        
+
+        circle_marker_19ceab2b2583870cb0dbfc9d17c356c8.bindPopup(popup_1b365c507839f5184809d1e2f1ffffa7)
+        ;
+
+        
+    
+    
+            var circle_marker_458aeff0592440a2b4b985df431c8ca5 = L.circleMarker(
+                [-8.8742, 125.7275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_442a2fd3c540e21bd2de0912892b4ca0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3568909881f179637cf3a3ac7d1cfb24 = $(`<div id="html_3568909881f179637cf3a3ac7d1cfb24" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>동티모르</div></div>`)[0];
+                popup_442a2fd3c540e21bd2de0912892b4ca0.setContent(html_3568909881f179637cf3a3ac7d1cfb24);
+            
+        
+
+        circle_marker_458aeff0592440a2b4b985df431c8ca5.bindPopup(popup_442a2fd3c540e21bd2de0912892b4ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_55a088407736216080573f7461b27d9c = L.circleMarker(
+                [48.0196, 66.9237],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_719b77e519341a16fc73b31e4dd96d83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26547799433f3ad456b022c3006f7283 = $(`<div id="html_26547799433f3ad456b022c3006f7283" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>카자흐스탄</div></div>`)[0];
+                popup_719b77e519341a16fc73b31e4dd96d83.setContent(html_26547799433f3ad456b022c3006f7283);
+            
+        
+
+        circle_marker_55a088407736216080573f7461b27d9c.bindPopup(popup_719b77e519341a16fc73b31e4dd96d83)
+        ;
+
+        
+    
+    
+            var circle_marker_12a609f7fcf0e93a43d980389d7ecec5 = L.circleMarker(
+                [41.3775, 64.5853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_230e0765352e7ca0b3c1885971458959 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56c00faf516603e4ac7b0953a00e8f89 = $(`<div id="html_56c00faf516603e4ac7b0953a00e8f89" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>우즈베키스탄</div></div>`)[0];
+                popup_230e0765352e7ca0b3c1885971458959.setContent(html_56c00faf516603e4ac7b0953a00e8f89);
+            
+        
+
+        circle_marker_12a609f7fcf0e93a43d980389d7ecec5.bindPopup(popup_230e0765352e7ca0b3c1885971458959)
+        ;
+
+        
+    
+    
+            var circle_marker_309ea4af061ce7e0d204fb4d5e426b61 = L.circleMarker(
+                [38.9697, 59.5563],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_8021706d54e497c124d5a76cf939e3dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4bed7fd03000a07f8d8190ffff039f23 = $(`<div id="html_4bed7fd03000a07f8d8190ffff039f23" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>투르크메니스탄</div></div>`)[0];
+                popup_8021706d54e497c124d5a76cf939e3dc.setContent(html_4bed7fd03000a07f8d8190ffff039f23);
+            
+        
+
+        circle_marker_309ea4af061ce7e0d204fb4d5e426b61.bindPopup(popup_8021706d54e497c124d5a76cf939e3dc)
+        ;
+
+        
+    
+    
+            var circle_marker_051790c8c9b1ff640d17afacac334a61 = L.circleMarker(
+                [41.2044, 74.7661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_0dbdb9f4826068eb01aad9dea8bcb652 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f91178aa50f60500e284e8b9b37df9a8 = $(`<div id="html_f91178aa50f60500e284e8b9b37df9a8" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>키르기스스탄</div></div>`)[0];
+                popup_0dbdb9f4826068eb01aad9dea8bcb652.setContent(html_f91178aa50f60500e284e8b9b37df9a8);
+            
+        
+
+        circle_marker_051790c8c9b1ff640d17afacac334a61.bindPopup(popup_0dbdb9f4826068eb01aad9dea8bcb652)
+        ;
+
+        
+    
+    
+            var circle_marker_bd13ea09b5d22fdbbce385901964dc7c = L.circleMarker(
+                [38.861, 71.2761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_85df6f98c0a25c9c970f1e22e0f05159 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1867c126dd80b16505b91594c78a4f72 = $(`<div id="html_1867c126dd80b16505b91594c78a4f72" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>타지키스탄</div></div>`)[0];
+                popup_85df6f98c0a25c9c970f1e22e0f05159.setContent(html_1867c126dd80b16505b91594c78a4f72);
+            
+        
+
+        circle_marker_bd13ea09b5d22fdbbce385901964dc7c.bindPopup(popup_85df6f98c0a25c9c970f1e22e0f05159)
+        ;
+
+        
+    
+    
+            var circle_marker_9bad6eb30abd9631b143bceae7c1b3a2 = L.circleMarker(
+                [33.2232, 43.6793],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_d08467663b3b9dd842502f3e373ccc28 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f37045889e6dc206b92cc8d234b90163 = $(`<div id="html_f37045889e6dc206b92cc8d234b90163" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>이라크</div></div>`)[0];
+                popup_d08467663b3b9dd842502f3e373ccc28.setContent(html_f37045889e6dc206b92cc8d234b90163);
+            
+        
+
+        circle_marker_9bad6eb30abd9631b143bceae7c1b3a2.bindPopup(popup_d08467663b3b9dd842502f3e373ccc28)
+        ;
+
+        
+    
+    
+            var circle_marker_aee1a894cddf5150b43fcb67804d78aa = L.circleMarker(
+                [33.8547, 35.8623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_fc499fd9577ab095b3c801e64e6fb669 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86e24941ae765662ee1cc48345c7eec9 = $(`<div id="html_86e24941ae765662ee1cc48345c7eec9" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>레바논</div></div>`)[0];
+                popup_fc499fd9577ab095b3c801e64e6fb669.setContent(html_86e24941ae765662ee1cc48345c7eec9);
+            
+        
+
+        circle_marker_aee1a894cddf5150b43fcb67804d78aa.bindPopup(popup_fc499fd9577ab095b3c801e64e6fb669)
+        ;
+
+        
+    
+    
+            var circle_marker_439af2f1a8f2186fa064c28a8b5a174a = L.circleMarker(
+                [34.8021, 38.9968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_f889d7ac68e5bb3f2b61b0c717e73f21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e569fb25c78191a321e3b30dab17db2a = $(`<div id="html_e569fb25c78191a321e3b30dab17db2a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>시리아</div></div>`)[0];
+                popup_f889d7ac68e5bb3f2b61b0c717e73f21.setContent(html_e569fb25c78191a321e3b30dab17db2a);
+            
+        
+
+        circle_marker_439af2f1a8f2186fa064c28a8b5a174a.bindPopup(popup_f889d7ac68e5bb3f2b61b0c717e73f21)
+        ;
+
+        
+    
+    
+            var circle_marker_d9c1485b379153518e908c36755c14e8 = L.circleMarker(
+                [15.5527, 48.5164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_21fe75d360d8ea49eb312ebd5471d52b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c09653ddb7eb67edf7a5caf22585daf8 = $(`<div id="html_c09653ddb7eb67edf7a5caf22585daf8" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>예멘</div></div>`)[0];
+                popup_21fe75d360d8ea49eb312ebd5471d52b.setContent(html_c09653ddb7eb67edf7a5caf22585daf8);
+            
+        
+
+        circle_marker_d9c1485b379153518e908c36755c14e8.bindPopup(popup_21fe75d360d8ea49eb312ebd5471d52b)
+        ;
+
+        
+    
+    
+            var circle_marker_df3515608d0395d7d95856ac465f9efb = L.circleMarker(
+                [30.5852, 36.2384],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_1a2a74a5b06ea8c1c2fd42a75f7d39fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2fe88142458678e13360d931c1261a3 = $(`<div id="html_e2fe88142458678e13360d931c1261a3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>요르단</div></div>`)[0];
+                popup_1a2a74a5b06ea8c1c2fd42a75f7d39fc.setContent(html_e2fe88142458678e13360d931c1261a3);
+            
+        
+
+        circle_marker_df3515608d0395d7d95856ac465f9efb.bindPopup(popup_1a2a74a5b06ea8c1c2fd42a75f7d39fc)
+        ;
+
+        
+    
+    
+            var circle_marker_8c2b62097305f6a263ac9273fab2f20a = L.circleMarker(
+                [31.9522, 35.2332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8b191b0390b811d24ec30aeb755d5e29);
+        
+    
+        var popup_b0772043c505882bb71546af89ec7079 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0eebb4ee2c6036b32e33348270ac392 = $(`<div id="html_d0eebb4ee2c6036b32e33348270ac392" style="width: 100.0%; height: 100.0%;"><div style='font-size: 1.3em; font-weight: bold; white-space: nowrap;'>팔레스타인</div></div>`)[0];
+                popup_b0772043c505882bb71546af89ec7079.setContent(html_d0eebb4ee2c6036b32e33348270ac392);
+            
+        
+
+        circle_marker_8c2b62097305f6a263ac9273fab2f20a.bindPopup(popup_b0772043c505882bb71546af89ec7079)
+        ;
+
+        
+    
+</script>
+</html>
