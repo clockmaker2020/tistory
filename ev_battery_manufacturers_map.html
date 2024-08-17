@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6360bfaf6f07b320486f6ad404f0580f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6360bfaf6f07b320486f6ad404f0580f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6360bfaf6f07b320486f6ad404f0580f = L.map(
+                "map_6360bfaf6f07b320486f6ad404f0580f",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a53170a4928601e1971c9c0797422fc6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a53170a4928601e1971c9c0797422fc6.addTo(map_6360bfaf6f07b320486f6ad404f0580f);
+        
+    
+            var marker_cluster_958367ba68d219db50bf7ad6b47de3eb = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_24ad1001ca961f0b378543e21c715eea = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_8832a73a8caee676a5f6f88a9c915568 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02eddb968c0ad085d5332d4b7901ab3a = $(`<div id="html_02eddb968c0ad085d5332d4b7901ab3a" style="width: 100.0%; height: 100.0%;">CATL - Lithium-ion batteries - Market Share: 37.5%                                                  </div>`)[0];
+                popup_8832a73a8caee676a5f6f88a9c915568.setContent(html_02eddb968c0ad085d5332d4b7901ab3a);
+            
+        
+
+        marker_24ad1001ca961f0b378543e21c715eea.bindPopup(popup_8832a73a8caee676a5f6f88a9c915568)
+        ;
+
+        
+    
+    
+            var marker_0bc5c73d0b1b315113df17227652bdec = L.marker(
+                [36.638392, 127.6961188],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_fc61fd1139148961e8c165037d203cbf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3007d5d585a69069707840cc51f7d87c = $(`<div id="html_3007d5d585a69069707840cc51f7d87c" style="width: 100.0%; height: 100.0%;">LG Energy Solution - Lithium-ion batteries - Market Share: 24.5%                                                  </div>`)[0];
+                popup_fc61fd1139148961e8c165037d203cbf.setContent(html_3007d5d585a69069707840cc51f7d87c);
+            
+        
+
+        marker_0bc5c73d0b1b315113df17227652bdec.bindPopup(popup_fc61fd1139148961e8c165037d203cbf)
+        ;
+
+        
+    
+    
+            var marker_abd6d29e3a1a0324c6f568ed7875e8f0 = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_e81ac3609db049e5b75c3a69d15965e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7dd0af68f1380c94067c9a1ebe5ed0c5 = $(`<div id="html_7dd0af68f1380c94067c9a1ebe5ed0c5" style="width: 100.0%; height: 100.0%;">Panasonic - Lithium-ion batteries - Market Share: 15.7%                                                  </div>`)[0];
+                popup_e81ac3609db049e5b75c3a69d15965e3.setContent(html_7dd0af68f1380c94067c9a1ebe5ed0c5);
+            
+        
+
+        marker_abd6d29e3a1a0324c6f568ed7875e8f0.bindPopup(popup_e81ac3609db049e5b75c3a69d15965e3)
+        ;
+
+        
+    
+    
+            var marker_6d5f00128e56ddb0c182d57f0e8ffad0 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_aaf8ad7c9f202ff709a52ff962be3b7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c2161b564d25797774d0435a773e616 = $(`<div id="html_4c2161b564d25797774d0435a773e616" style="width: 100.0%; height: 100.0%;">BYD - Lithium iron phosphate (LFP) - Market Share: 7.2%                                                  </div>`)[0];
+                popup_aaf8ad7c9f202ff709a52ff962be3b7b.setContent(html_4c2161b564d25797774d0435a773e616);
+            
+        
+
+        marker_6d5f00128e56ddb0c182d57f0e8ffad0.bindPopup(popup_aaf8ad7c9f202ff709a52ff962be3b7b)
+        ;
+
+        
+    
+    
+            var marker_7ec013d35c91fd7fbc84009cde89f009 = L.marker(
+                [36.638392, 127.6961188],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_f52f35d114c211ca0972c2a8230d1faf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e95986f527afa64aa802d25271a9bf5b = $(`<div id="html_e95986f527afa64aa802d25271a9bf5b" style="width: 100.0%; height: 100.0%;">Samsung SDI - Lithium-ion batteries - Market Share: 6.0%                                                  </div>`)[0];
+                popup_f52f35d114c211ca0972c2a8230d1faf.setContent(html_e95986f527afa64aa802d25271a9bf5b);
+            
+        
+
+        marker_7ec013d35c91fd7fbc84009cde89f009.bindPopup(popup_f52f35d114c211ca0972c2a8230d1faf)
+        ;
+
+        
+    
+    
+            var marker_bcb2cb200d76b075ca5fca63e9b55c6c = L.marker(
+                [36.638392, 127.6961188],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_3c59df8c77188f3c1336e3e94a1beba3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c82623fe58c685596bc92187e01fd75c = $(`<div id="html_c82623fe58c685596bc92187e01fd75c" style="width: 100.0%; height: 100.0%;">SK Innovation - Lithium-ion batteries - Market Share: 5.6%                                                  </div>`)[0];
+                popup_3c59df8c77188f3c1336e3e94a1beba3.setContent(html_c82623fe58c685596bc92187e01fd75c);
+            
+        
+
+        marker_bcb2cb200d76b075ca5fca63e9b55c6c.bindPopup(popup_3c59df8c77188f3c1336e3e94a1beba3)
+        ;
+
+        
+    
+    
+            var marker_57b2b02cbf249a82290eb073417b2a08 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_44ca1df28e68248d0e6493433c8a751d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_808dcb3ce4a65920021bfbd75bcaf4b1 = $(`<div id="html_808dcb3ce4a65920021bfbd75bcaf4b1" style="width: 100.0%; height: 100.0%;">CALB - Lithium-ion batteries - Market Share: 3.5%                                                  </div>`)[0];
+                popup_44ca1df28e68248d0e6493433c8a751d.setContent(html_808dcb3ce4a65920021bfbd75bcaf4b1);
+            
+        
+
+        marker_57b2b02cbf249a82290eb073417b2a08.bindPopup(popup_44ca1df28e68248d0e6493433c8a751d)
+        ;
+
+        
+    
+    
+            var marker_ce177c14b51efa3d26f6b5a4265d4ea8 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_88273932fc7aa7fa3f377b428ef9c665 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c29ce5d72c67e62e556d9440adbc79c3 = $(`<div id="html_c29ce5d72c67e62e556d9440adbc79c3" style="width: 100.0%; height: 100.0%;">Gotion High-Tech - Lithium iron phosphate (LFP) - Market Share: 2.2%                                                  </div>`)[0];
+                popup_88273932fc7aa7fa3f377b428ef9c665.setContent(html_c29ce5d72c67e62e556d9440adbc79c3);
+            
+        
+
+        marker_ce177c14b51efa3d26f6b5a4265d4ea8.bindPopup(popup_88273932fc7aa7fa3f377b428ef9c665)
+        ;
+
+        
+    
+    
+            var marker_b5629761e1d2269ea272be0f6366c4f3 = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_0b0dd345ef23c822ad98e02a4acc8e2d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4aa0d650075ab07c73d78fa9d3a26f9c = $(`<div id="html_4aa0d650075ab07c73d78fa9d3a26f9c" style="width: 100.0%; height: 100.0%;">AESC (Envision Group) - Lithium-ion batteries - Market Share: 1.5%                                                  </div>`)[0];
+                popup_0b0dd345ef23c822ad98e02a4acc8e2d.setContent(html_4aa0d650075ab07c73d78fa9d3a26f9c);
+            
+        
+
+        marker_b5629761e1d2269ea272be0f6366c4f3.bindPopup(popup_0b0dd345ef23c822ad98e02a4acc8e2d)
+        ;
+
+        
+    
+    
+            var marker_78428ee5cf6b94eb52231c7d4d497173 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_b3204c8a7911cdaa36cc9ec3c173ba0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10763bd7fc122d0a65bee573be87fc8b = $(`<div id="html_10763bd7fc122d0a65bee573be87fc8b" style="width: 100.0%; height: 100.0%;">Guoxuan High-Tech - Lithium iron phosphate (LFP) - Market Share: 0.9%                                                  </div>`)[0];
+                popup_b3204c8a7911cdaa36cc9ec3c173ba0f.setContent(html_10763bd7fc122d0a65bee573be87fc8b);
+            
+        
+
+        marker_78428ee5cf6b94eb52231c7d4d497173.bindPopup(popup_b3204c8a7911cdaa36cc9ec3c173ba0f)
+        ;
+
+        
+    
+    
+            var marker_49ed0a5f064e3c9799db0c56fe8a81b0 = L.marker(
+                [59.6749712, 14.5208584],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_9d20089ff93d42f51606006a1e246b82 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cca55fdf0426b8d59fadd7d498e6fcc = $(`<div id="html_2cca55fdf0426b8d59fadd7d498e6fcc" style="width: 100.0%; height: 100.0%;">Northvolt - Lithium-ion batteries - Market Share: 0.6%                                                  </div>`)[0];
+                popup_9d20089ff93d42f51606006a1e246b82.setContent(html_2cca55fdf0426b8d59fadd7d498e6fcc);
+            
+        
+
+        marker_49ed0a5f064e3c9799db0c56fe8a81b0.bindPopup(popup_9d20089ff93d42f51606006a1e246b82)
+        ;
+
+        
+    
+    
+            var marker_a580481e691b15e51cba7bb17d8206c0 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_59b0d795702afb820cc7721ab21a1e21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f55d9efc98f487f9ea898a3fd61db298 = $(`<div id="html_f55d9efc98f487f9ea898a3fd61db298" style="width: 100.0%; height: 100.0%;">Saft Groupe S.A. - Advanced batteries and smart battery systems - Market Share: 0.4%                                                  </div>`)[0];
+                popup_59b0d795702afb820cc7721ab21a1e21.setContent(html_f55d9efc98f487f9ea898a3fd61db298);
+            
+        
+
+        marker_a580481e691b15e51cba7bb17d8206c0.bindPopup(popup_59b0d795702afb820cc7721ab21a1e21)
+        ;
+
+        
+    
+    
+            var marker_78f7f0f4d7d2231bdcb64e95463d0360 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_50bb80672b1681c53e4ef09d7e940457 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_110b3f74602d036648d83ded60d02508 = $(`<div id="html_110b3f74602d036648d83ded60d02508" style="width: 100.0%; height: 100.0%;">ACC (Automotive Cells Company) - Lithium-ion batteries - Market Share: 0.3%                                                  </div>`)[0];
+                popup_50bb80672b1681c53e4ef09d7e940457.setContent(html_110b3f74602d036648d83ded60d02508);
+            
+        
+
+        marker_78f7f0f4d7d2231bdcb64e95463d0360.bindPopup(popup_50bb80672b1681c53e4ef09d7e940457)
+        ;
+
+        
+    
+    
+            var marker_9569a325cbfa0e4a6686164ca3c855f2 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_9109497c823d6174a93e4e8b658c4f27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_593d541867e4e3cb60af792f7c7411da = $(`<div id="html_593d541867e4e3cb60af792f7c7411da" style="width: 100.0%; height: 100.0%;">Verkor - High-performance batteries - Market Share: 0.2%                                                  </div>`)[0];
+                popup_9109497c823d6174a93e4e8b658c4f27.setContent(html_593d541867e4e3cb60af792f7c7411da);
+            
+        
+
+        marker_9569a325cbfa0e4a6686164ca3c855f2.bindPopup(popup_9109497c823d6174a93e4e8b658c4f27)
+        ;
+
+        
+    
+    
+            var marker_48ffce8f4a4a0aef5f01364a9a0420f1 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_e68ce05fd821a18d3b974a360134e8a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ece2a4b9a4c79e7b006cb5d3c9df6c6c = $(`<div id="html_ece2a4b9a4c79e7b006cb5d3c9df6c6c" style="width: 100.0%; height: 100.0%;">Tesla (Gigafactory) - Lithium-ion batteries - Market Share: 2.0%                                                  </div>`)[0];
+                popup_e68ce05fd821a18d3b974a360134e8a7.setContent(html_ece2a4b9a4c79e7b006cb5d3c9df6c6c);
+            
+        
+
+        marker_48ffce8f4a4a0aef5f01364a9a0420f1.bindPopup(popup_e68ce05fd821a18d3b974a360134e8a7)
+        ;
+
+        
+    
+    
+            var marker_29188d927695c7e5cb1ec85367bdb824 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_00f24711042dc6797dd37a77f9b3c421 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ca9b2876b461df8ccb55561ba5f0b7a = $(`<div id="html_7ca9b2876b461df8ccb55561ba5f0b7a" style="width: 100.0%; height: 100.0%;">Romeo Power - High-density batteries - Market Share: 0.3%                                                  </div>`)[0];
+                popup_00f24711042dc6797dd37a77f9b3c421.setContent(html_7ca9b2876b461df8ccb55561ba5f0b7a);
+            
+        
+
+        marker_29188d927695c7e5cb1ec85367bdb824.bindPopup(popup_00f24711042dc6797dd37a77f9b3c421)
+        ;
+
+        
+    
+    
+            var marker_f7a631ec3627006ec3ba8d2cc5e8b65d = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_0755419153378773e9d07e9a9fbf8ee3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a84ba47e6d127e43da48e150c9c9b5f3 = $(`<div id="html_a84ba47e6d127e43da48e150c9c9b5f3" style="width: 100.0%; height: 100.0%;">QuantumScape - Solid-state batteries - Market Share: 0.2%                                                  </div>`)[0];
+                popup_0755419153378773e9d07e9a9fbf8ee3.setContent(html_a84ba47e6d127e43da48e150c9c9b5f3);
+            
+        
+
+        marker_f7a631ec3627006ec3ba8d2cc5e8b65d.bindPopup(popup_0755419153378773e9d07e9a9fbf8ee3)
+        ;
+
+        
+    
+    
+            var marker_df271b15e5268add719b3a6b36ee8d28 = L.marker(
+                [22.3511148, 78.6677428],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_1223a8e79eaf577066d4c1d72a8bc95e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c142e0a520f19b52e74202bea655186c = $(`<div id="html_c142e0a520f19b52e74202bea655186c" style="width: 100.0%; height: 100.0%;">Reliance Industries (Acquired Faradion) - Sodium-ion batteries - Market Share: 0.1%                                                  </div>`)[0];
+                popup_1223a8e79eaf577066d4c1d72a8bc95e.setContent(html_c142e0a520f19b52e74202bea655186c);
+            
+        
+
+        marker_df271b15e5268add719b3a6b36ee8d28.bindPopup(popup_1223a8e79eaf577066d4c1d72a8bc95e)
+        ;
+
+        
+    
+    
+            var marker_0dcb1f50a4fb5851686f7ad52a3b0d55 = L.marker(
+                [-24.7761086, 134.755],
+                {}
+            ).addTo(marker_cluster_958367ba68d219db50bf7ad6b47de3eb);
+        
+    
+        var popup_ab7fbe744957977fe94b80bcdb503ef6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d845061cb69297fdcd9ed03fc4a5e41 = $(`<div id="html_1d845061cb69297fdcd9ed03fc4a5e41" style="width: 100.0%; height: 100.0%;">Energy Renaissance - Lithium-ion batteries - Market Share: 0.05%                                                  </div>`)[0];
+                popup_ab7fbe744957977fe94b80bcdb503ef6.setContent(html_1d845061cb69297fdcd9ed03fc4a5e41);
+            
+        
+
+        marker_0dcb1f50a4fb5851686f7ad52a3b0d55.bindPopup(popup_ab7fbe744957977fe94b80bcdb503ef6)
+        ;
+
+        
+    
+    
+            marker_cluster_958367ba68d219db50bf7ad6b47de3eb.addTo(map_6360bfaf6f07b320486f6ad404f0580f);
+        
+</script>
+</html>
