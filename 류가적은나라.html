@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c23efd7ef3c051ae86861a2e6f2632df {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c23efd7ef3c051ae86861a2e6f2632df" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c23efd7ef3c051ae86861a2e6f2632df = L.map(
+                "map_c23efd7ef3c051ae86861a2e6f2632df",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7906ed61ebc9a43f9dfadafceadc82ee = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7906ed61ebc9a43f9dfadafceadc82ee.addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+            var marker_b4a0d2b24e4a327145b04f4264541eaa = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_16eaa06374d084348cf08b0542cc458a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bce47dd4405c8b97f2a7d3917487378a = $(`<div id="html_bce47dd4405c8b97f2a7d3917487378a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>미국: 0일</div></div>`)[0];
+                popup_16eaa06374d084348cf08b0542cc458a.setContent(html_bce47dd4405c8b97f2a7d3917487378a);
+            
+        
+
+        marker_b4a0d2b24e4a327145b04f4264541eaa.bindPopup(popup_16eaa06374d084348cf08b0542cc458a)
+        ;
+
+        
+    
+    
+            marker_b4a0d2b24e4a327145b04f4264541eaa.bindTooltip(
+                `<div>
+                     미국: 0일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08b8fef5ace70a17fd0b856995736968 = L.marker(
+                [7.4256, 150.5508],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_2b44686bdd08e6e876d1ce3a5b6859c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2ea66fa46b8f3457c81665a35a52419 = $(`<div id="html_e2ea66fa46b8f3457c81665a35a52419" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>미크로네시아: 9일</div></div>`)[0];
+                popup_2b44686bdd08e6e876d1ce3a5b6859c8.setContent(html_e2ea66fa46b8f3457c81665a35a52419);
+            
+        
+
+        marker_08b8fef5ace70a17fd0b856995736968.bindPopup(popup_2b44686bdd08e6e876d1ce3a5b6859c8)
+        ;
+
+        
+    
+    
+            marker_08b8fef5ace70a17fd0b856995736968.bindTooltip(
+                `<div>
+                     미크로네시아: 9일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0b85e2dd004b14de8f6696420871615 = L.marker(
+                [-0.5228, 166.9315],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_70062e9e355215a17242f9aa07a0256e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47d3c644f777ac86cf1cab94e2cefa25 = $(`<div id="html_47d3c644f777ac86cf1cab94e2cefa25" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>나우루: 10일</div></div>`)[0];
+                popup_70062e9e355215a17242f9aa07a0256e.setContent(html_47d3c644f777ac86cf1cab94e2cefa25);
+            
+        
+
+        marker_d0b85e2dd004b14de8f6696420871615.bindPopup(popup_70062e9e355215a17242f9aa07a0256e)
+        ;
+
+        
+    
+    
+            marker_d0b85e2dd004b14de8f6696420871615.bindTooltip(
+                `<div>
+                     나우루: 10일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5963a90f4644767b202ca5b332c6346 = L.marker(
+                [1.8709, -157.363],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_be284e0c24d82bc54d86413d23baee36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c57f7709f43f9c9c0a30f0b38965e381 = $(`<div id="html_c57f7709f43f9c9c0a30f0b38965e381" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>키리바시: 10일</div></div>`)[0];
+                popup_be284e0c24d82bc54d86413d23baee36.setContent(html_c57f7709f43f9c9c0a30f0b38965e381);
+            
+        
+
+        marker_f5963a90f4644767b202ca5b332c6346.bindPopup(popup_be284e0c24d82bc54d86413d23baee36)
+        ;
+
+        
+    
+    
+            marker_f5963a90f4644767b202ca5b332c6346.bindTooltip(
+                `<div>
+                     키리바시: 10일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f673c71aec981caed649eefb7892ee96 = L.marker(
+                [7.515, 134.5825],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_3671f5575b668d8026e3edcbddc88a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aa3542f07d94fd25e871c21c76b8489 = $(`<div id="html_3aa3542f07d94fd25e871c21c76b8489" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>팔라우: 12일</div></div>`)[0];
+                popup_3671f5575b668d8026e3edcbddc88a10.setContent(html_3aa3542f07d94fd25e871c21c76b8489);
+            
+        
+
+        marker_f673c71aec981caed649eefb7892ee96.bindPopup(popup_3671f5575b668d8026e3edcbddc88a10)
+        ;
+
+        
+    
+    
+            marker_f673c71aec981caed649eefb7892ee96.bindTooltip(
+                `<div>
+                     팔라우: 12일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e0c0d75272c665f8bb824a97d08cbcd = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_b4b30ded5a747e3cfed3474945de690a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_338ad0c18daf6df5abf023d0483501dc = $(`<div id="html_338ad0c18daf6df5abf023d0483501dc" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>멕시코: 14일</div></div>`)[0];
+                popup_b4b30ded5a747e3cfed3474945de690a.setContent(html_338ad0c18daf6df5abf023d0483501dc);
+            
+        
+
+        marker_3e0c0d75272c665f8bb824a97d08cbcd.bindPopup(popup_b4b30ded5a747e3cfed3474945de690a)
+        ;
+
+        
+    
+    
+            marker_3e0c0d75272c665f8bb824a97d08cbcd.bindTooltip(
+                `<div>
+                     멕시코: 14일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61889485781ec07eab0d5139ed53d8a2 = L.marker(
+                [12.8797, 121.774],
+                {}
+            ).addTo(map_c23efd7ef3c051ae86861a2e6f2632df);
+        
+    
+        var popup_281e463bebb32adfdef96c02479b34b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3e88eca0c996d7ef365140fd250c18 = $(`<div id="html_7f3e88eca0c996d7ef365140fd250c18" style="width: 100.0%; height: 100.0%;"><div style='font-size: 150%; white-space: nowrap;'>필리핀: 14일</div></div>`)[0];
+                popup_281e463bebb32adfdef96c02479b34b7.setContent(html_7f3e88eca0c996d7ef365140fd250c18);
+            
+        
+
+        marker_61889485781ec07eab0d5139ed53d8a2.bindPopup(popup_281e463bebb32adfdef96c02479b34b7)
+        ;
+
+        
+    
+    
+            marker_61889485781ec07eab0d5139ed53d8a2.bindTooltip(
+                `<div>
+                     필리핀: 14일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
